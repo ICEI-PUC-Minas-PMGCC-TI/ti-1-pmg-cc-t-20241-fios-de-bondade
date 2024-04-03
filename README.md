@@ -1,17 +1,17 @@
 # Nome do projeto
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+Este projeto tem como objetivo principal facilitar o processo de doação de roupas, conectando pessoas interessadas em doar com instituições e ONGs necessitadas. Nós, alunos do curso de Ciência da Computação da PUC Minas, visamos criar uma interface amigável, simples e intuitiva, tornando mais fácil e rápido para os doadores encontrarem e entrarem em contato com as instituições beneficiadas.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Apolo Ribeiro Bagattini
+* Luis Henrique Ferreira Costa
+* Matheus Greco Morais Dall'Alba
+* Rayssa Mell de Souza Silva
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
+* Hayala Nepomuceno Curto
 * Nome completo do professor 2
 
 ## Instruções de utilização

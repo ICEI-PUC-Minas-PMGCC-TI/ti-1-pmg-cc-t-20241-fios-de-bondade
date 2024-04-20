@@ -91,10 +91,13 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 ## Requisitos
 
 - [Requisitos Funcionais (RF)]
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| O site deve permitir que os usuários se cadastrem no sistema, com nome, email e senha. Além disso, é permitido ao usuário editar ou deletar seu cadastro| ALTA | 
-|RF-002| O site deve oferecer, durante o cadastro, a opção de ser um usuário doador ou receptor| ALTA |
+|ID    |            Descrição do Requisito                  | Prioridade |
+|------|----------------------------------------------------|------------|
+|RF-001| O site deve permitir que os usuários se cadastrem  |
+         no sistema, com nome, email e senha. Além disso, é |
+         permitido ao usuário editar ou deletar seu cadastro| ALTA       | 
+|RF-002| O site deve oferecer, durante o cadastro, a opção  |
+          de ser um usuário doador ou receptor|               ALTA |
 |RF-003| O site deve permitir ao usuário receptor escolher os tipos de roupas que ele deseja doar | ALTA |
 |RF-004| site deve permitir ao usuário doador dar sugestões de roupas com maior demanda de doação | MÉDIA |
 |RF-005| O site deve oferecer ao usuário a opção de agendar a doação. | MÉDIA |

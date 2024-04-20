@@ -12,7 +12,7 @@ Este projeto tem como objetivo principal facilitar o processo de doação de rou
 ## Professores responsáveis
 
 * Hayala Nepomuceno Curto
-* Nome completo do professor 2
+* Carlos Alberto Marques Pietrobon
 
 ## Instruções de utilização
 

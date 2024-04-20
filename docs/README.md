@@ -1,48 +1,69 @@
-# Documentação do Projeto (TIDocs)
+# Informações do Projeto (TIDocs)
 
-Esta pasta armazena a documentação do projeto para a disciplina de **Trabalho Interdisciplinar 1** dos cursos de Tecnologia da Informação da **[PUC Minas](https://pucminas.br)**. Essa documentação é estruturada na forma de um site que fica disponível por meio do GitHub Pages e pode ser incluído, também, no site da solução hospedada. Um [exemplo publicado do TIDocs](https://webtech-puc-minas.github.io/ti1-template/) está disponível por meio do repositório do **[WebTech PUC Minas](https://github.com/webtech-pucminas)**.
+`TÍTULO DO PROJETO`  
 
-A documentação do projeto inclui as seguintes seções:
+Fios de Bondade.
 
-1. Introdução
+`CURSO` 
+
+Ciência da Computação
+
+## Participantes
+Apolo Ribeiro Bagattini
+Luis Henrique Ferreira Costa
+Matheus Greco Morais Dall'Alba
+Rayssa Mell de Souza Silva
+
+## Estrutura da Documentação
+
+1. [Introdução](#introducao)
+  - Descrição
 2. Contexto
+  - [Problema](#problema)
+  - [Objetivos](#objetivos)
+  - [Justificativa](#justificativa)
+  - [Público-Alvo](#público-alvo)
 3. Concepção
-4. Metodologia
-5. Solução
-6. FAQ (Questões frequentes)
-7. Referências Bibliográficas
+  - Projeto Design Thinking
+  - Espefificações do Projeto
+     - [Personas e Mapas de Empatia](#personas-e-mapas-de-empatia)
+     - [Histórias de Usuários](#histórias-de-usuários)
+     - [Requisitos](#requisitos)
+        - [Requisitos Funcionais](#requisitos-funcionais)
+        - [Requisitos não Funcionais](#requisitos-não-funcionais)
+     - Projeto de Interfaces
+        - User/Screen Flow e Protótipo interativo
+        - Wireframes
+5. Metodologia
+  - [Ferramentas](#ferramentas)
+  - [Gestão do rojeto](#gestao-do-projeto)
+  - [Controle de Versão](#controle-de-versão)
+6. Referências Bibliográficas
 
-O template para o site é estruturado e permite que a equipe evolua a documentação do projeto à medida que avance no desenvolvimento.
 
-# Orientações gerais
+# Introdução 
 
-Esta seção traz explicações breves sobre o conjunto de artefatos que precisam ser incluídos na documentação do projeto com uma conjunto de links importantes para que se entenda como criar cada coisa. 
+Este projeto tem como objetivo principal facilitar o processo de doação de roupas, conectando pessoas interessadas em doar com instituições e ONGs necessitadas. Nós (Apolo, Luis Henrique, Matheus e Rayssa), alunos do curso de Ciência da Computação da PUC Minas, visamos criar uma interface amigável, simples e intuitiva, tornando mais fácil e rápido para os doadores encontrarem e entrarem em contato com as instituições beneficiadas.
+
+# Contexto
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-**Links Úteis**:
-
-- [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-- [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-- [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Muitas vezes, as pessoas têm boas intenções de doar roupas para quem precisa, mas encontram dificuldades no processo. Não sabem onde doar, como agendar a doação ou se a instituição beneficiada realmente necessita das roupas. Além disso, há uma falta de conexão entre doadores e instituições, o que pode resultar em doações desperdiçadas ou subutilizadas. Esse problema é exacerbado pela falta de uma plataforma centralizada e eficiente para facilitar o processo de doação de roupas.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+O objetivo geral deste trabalho é a criação de um Sistema Web intermediário que facilite e promova a doação de roupas de forma confiável e segura.
 
-**Links Úteis**:
-
-- [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+  - Elaborar o design e a interface da plataforma online de doação de roupas, assegurando a usabilidade e acessibilidade em diferentes dispositivos.
+  - Implementar um sistema de cadastro seguro para os usuários interessados em doar e em receber doações.
+  - Integrar um sistema de agendamento de coletas, permitindo que os doadores escolham datas e horários convenientes para a retirada das doações.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A cultura de doação  desempenha um papel crucial no fomento de uma sociedade mais justa e consciente. Através das doações, é possível não apenas auxiliar indivíduos em situação de vulnerabilidade, proporcionando-lhes dignidade e conforto, mas também promover a sustentabilidade ao incentivar o reuso de peças e reduzir o descarte inadequado, o que contribui significativamente para a preservação ambiental. De acordo com o Pnuma (2022), o setor de vestuário é responsável por 2% a 8% das emissões de dióxido de carbono, evidenciando ainda mais a importância da prática de doação de roupas como uma ação sustentável.
+Para efetivar o processo de doação de roupas de forma eficiente, é imprescindível estabelecer uma comunicação eficaz entre os potenciais doadores e as instituições receptoras das doações, que posteriormente repassam as peças às pessoas necessitadas. No entanto, o sistema atual é muitas vezes burocrático e ineficiente, desestimulando potenciais doadores. A criação de uma plataforma online dedicada à doação de roupas visa simplificar e agilizar esse processo, facilitando a conexão direta entre doadores e instituições e garantindo uma distribuição eficaz das doações.
 
 **Links Úteis**:
 

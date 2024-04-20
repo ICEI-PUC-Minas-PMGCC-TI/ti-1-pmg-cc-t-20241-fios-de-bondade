@@ -16,9 +16,8 @@ Rayssa Mell de Souza Silva
 
 ## Estrutura da Documentação
 
-1. [Introdução](#introducao)
-  - Descrição
-2. Contexto
+1. [Introdução]
+2. [Contexto]
   - [Problema](#problema)
   - [Objetivos](#objetivos)
   - [Justificativa](#justificativa)
@@ -61,55 +60,52 @@ O objetivo geral deste trabalho é a criação de um Sistema Web intermediário 
 
 ## Justificativa
 
-
 A cultura de doação  desempenha um papel crucial no fomento de uma sociedade mais justa e consciente. Através das doações, é possível não apenas auxiliar indivíduos em situação de vulnerabilidade, proporcionando-lhes dignidade e conforto, mas também promover a sustentabilidade ao incentivar o reuso de peças e reduzir o descarte inadequado, o que contribui significativamente para a preservação ambiental. De acordo com o Pnuma (2022), o setor de vestuário é responsável por 2% a 8% das emissões de dióxido de carbono, evidenciando ainda mais a importância da prática de doação de roupas como uma ação sustentável.
 Para efetivar o processo de doação de roupas de forma eficiente, é imprescindível estabelecer uma comunicação eficaz entre os potenciais doadores e as instituições receptoras das doações, que posteriormente repassam as peças às pessoas necessitadas. No entanto, o sistema atual é muitas vezes burocrático e ineficiente, desestimulando potenciais doadores. A criação de uma plataforma online dedicada à doação de roupas visa simplificar e agilizar esse processo, facilitando a conexão direta entre doadores e instituições e garantindo uma distribuição eficaz das doações.
 
-**Links Úteis**:
-
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo da plataforma de doação de roupas é bastante diversificado e composto por indivíduos interessados em realizar doações e instituições e ONGs que atuam com pessoas em situação de vulnerabilidade e que necessitam dessas contribuições. Os indivíduos que desejam doar roupas podem pertencer a diversas faixas etárias e backgrounds socioeconômicos. Em relação à hierarquia, esses doadores atuam de forma independente em suas ações de doação. Por outro lado, as instituições e ONGs beneficiadas pela plataforma incluem diversos tipos de organizações, tais como abrigos, instituições religiosas, centros de acolhimento e entidades de assistência social, entre outras.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
+# Concepçãp 
 
-**Links Úteis**:
+## Processo de Design Thinking
 
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+## Especificações do Projeto 
 
-## Personas
+### Histórias de Usuários
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
+Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-**Links Úteis**:
+|EU COMO... `PERSONA`|    QUERO/PRECISO ... `FUNCIONALIDADE`   |         PARA ... `MOTIVO/VALOR`        |
+|--------------------|-----------------------------------------|----------------------------------------|
+|Flávio              |  Cadastrar a ONG na plataforma.         | Receber doações de roupas              |                                
+|Márcia              |  Atualizar as necessidades de doação de | Mantenham as informações sobre os tipos| 
+                     |                                         |  e tamanhos de roupas mais necessários.|                               
+|Márcia              |    
+|Flávio              |
+|Robson              | 
+|Robson              |          |
 
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-
-## Histórias de Usuários
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-**Links Úteis**:
-
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 
 ## Requisitos
 
-Os requisitos de um projeto são classificados em dois grupos:
+- [Requisitos Funcionais (RF)]
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
+|RF-001| O site deve permitir que os usuários se cadastrem no sistema, com nome, email e senha. Além disso, é permitido ao usuário editar ou deletar seu cadastro| ALTA | 
+|RF-002| O site deve oferecer, durante o cadastro, a opção de ser um usuário doador ou receptor| ALTA |
+|RF-003| O site deve permitir ao usuário receptor escolher os tipos de roupas que ele deseja doar | ALTA |
+|RF-004| site deve permitir ao usuário doador dar sugestões de roupas com maior demanda de doação | MÉDIA |
+|RF-005| O site deve oferecer ao usuário a opção de agendar a doação. | MÉDIA |
+|RF-006| O site deve solicitar o preenchimento de formulário com informações do usuário. | MÉDIA |
+|RF-007| O site deve permitir visualizar o histórico de doações.| BAIXA |
+|RF-008| O site deve fornecer um FAQ para sanar possíveis dúvidas do usuário| BAIXA |
+|RF-009| O site deve permitir verificar as notícias salvas como preferidas | BAIXA |
 
-- [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
-  correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
+- [Requisitos Não Funcionais (RNF)]
+  
 
-Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 **Links Úteis**:
 
@@ -150,3 +146,5 @@ Coloque detalhes sobre o processo de Design Thinking e a implementação do Fram
 - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
 - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
 - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- [omo Montar Uma Justificativa do TCC Com Apenas 4 Perguntas](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/#google_vignette)
+

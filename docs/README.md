@@ -42,26 +42,29 @@ Ciência da Computação
 
 # 1. Introdução 
 
-Este projeto tem como objetivo principal facilitar o processo de doação de roupas, conectando pessoas interessadas em doar com instituições e ONGs necessitadas. Nós (Apolo, Luis Henrique, Matheus e Rayssa), alunos do curso de Ciência da Computação da PUC Minas, visamos criar uma interface amigável, simples e intuitiva, tornando mais fácil e rápido para os doadores encontrarem e entrarem em contato com as instituições beneficiadas.
+O aumento significativo no consumo de roupas nos últimos anos tem contribuído significativamente para a poluição global, com o setor de vestuário sendo responsável por gerar de 2% a 8% do volume de emissões de dióxido de carbono (Programa de Nações Unidas para o Meio Ambiente - Pnuma, 2022). Diante deste cenário, diversas ONGs e instituições enfatizam a importância da doação de roupas como uma forma de reduzir o impacto ambiental e ajudar aqueles que mais necessitam. No entanto, para maximizar o alcance e eficácia das doações, é fundamental estabelecer uma comunicação eficaz entre os possíveis doadores e as instituições responsáveis pela recepção e distribuição das doações.
 
 # 2. Contexto
 
 ## Problema
 
-Muitas vezes, as pessoas têm boas intenções de doar roupas para quem precisa, mas encontram dificuldades no processo. Não sabem onde doar, como agendar a doação ou se a instituição beneficiada realmente necessita das roupas. Além disso, há uma falta de conexão entre doadores e instituições, o que pode resultar em doações desperdiçadas ou subutilizadas. Esse problema é exacerbado pela falta de uma plataforma centralizada e eficiente para facilitar o processo de doação de roupas.
+Muitas pessoas desejam doar roupas para ajudar aqueles em situação de vulnerabilidade, porém frequentemente enfrentam obstáculos no processo. A falta de informações transparentes sobre locais de doação, procedimentos para agendar as doações e a real necessidade das instituições beneficiadas pode desmotivar potenciais doadores. Paralelamente, organizações e indivíduos que dependem dessas doações enfrentam desafios para se conectar com doadores de forma eficiente e segura. Diante disso, o problema central que este projeto busca resolver é a carência de uma plataforma que facilite e centralize a conexão entre doadores e instituições, assegurando a confiabilidade, segurança e eficácia das doações realizadas.
 
 ## Objetivos
 
-O objetivo geral deste trabalho é a criação de um Sistema Web intermediário que facilite e promova a doação de roupas de forma confiável e segura.
+O objetivo geral deste trabalho é a criação de um Sistema Web que facilite e promova a doação de roupas de forma confiável e segura.
 
-  - Elaborar o design e a interface da plataforma online de doação de roupas, assegurando a usabilidade e acessibilidade em diferentes dispositivos.
-  - Implementar um sistema de cadastro seguro para os usuários interessados em doar e em receber doações.
+  - Elaborar um design intuitivo e responsivo para plataforma online de doação de roupas, assegurando a usabilidade e acessibilidade em diferentes dispositivos.
+  - Implementar um sistema de cadastro seguro para os usuários interessados em doar e em receber doações, garantindo a proteção e privacidade de seus dados.
+  - Integrar um sistema de localização para visualização dos pontos de coletas de ONGs e Instituições beneficiadas.
   - Integrar um sistema de agendamento de coletas, permitindo que os doadores escolham datas e horários convenientes para a retirada das doações.
 
 ## Justificativa
 
-A cultura de doação  desempenha um papel crucial no fomento de uma sociedade mais justa e consciente. Através das doações, é possível não apenas auxiliar indivíduos em situação de vulnerabilidade, proporcionando-lhes dignidade e conforto, mas também promover a sustentabilidade ao incentivar o reuso de peças e reduzir o descarte inadequado, o que contribui significativamente para a preservação ambiental. De acordo com o Pnuma (2022), o setor de vestuário é responsável por 2% a 8% das emissões de dióxido de carbono, evidenciando ainda mais a importância da prática de doação de roupas como uma ação sustentável.
-Para efetivar o processo de doação de roupas de forma eficiente, é imprescindível estabelecer uma comunicação eficaz entre os potenciais doadores e as instituições receptoras das doações, que posteriormente repassam as peças às pessoas necessitadas. No entanto, o sistema atual é muitas vezes burocrático e ineficiente, desestimulando potenciais doadores. A criação de uma plataforma online dedicada à doação de roupas visa simplificar e agilizar esse processo, facilitando a conexão direta entre doadores e instituições e garantindo uma distribuição eficaz das doações.
+A cultura de doação  desempenha um papel crucial no fomento de uma sociedade mais justa e consciente. Através das doações, é 
+possível não apenas auxiliar indivíduos em situação de vulnerabilidade, proporcionando-lhes dignidade e conforto, mas também 
+promover a sustentabilidade ao incentivar o reuso de peças e reduzir o descarte inadequado, o que contribui significativamente 
+para a preservação ambiental. Para efetivar o processo de doação de roupas de forma eficiente, é imprescindível estabelecer uma comunicação eficaz entre os potenciais doadores e as instituições receptoras das doações, que posteriormente repassam as peças às pessoas necessitadas. No entanto, o sistema atual é muitas vezes burocrático e ineficiente, desestimulando potenciais doadores. A criação de uma plataforma online dedicada à doação de roupas visa simplificar e agilizar esse processo, facilitando a conexão direta entre doadores e instituições e garantindo uma distribuição eficaz das doações.
 
 ## Público-Alvo
 

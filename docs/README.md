@@ -77,20 +77,21 @@ O público-alvo da plataforma de doação de roupas é bastante diversificado e 
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`|    QUERO/PRECISO ... `FUNCIONALIDADE`   |         PARA ... `MOTIVO/VALOR`        |
-|--------------------|-----------------------------------------|----------------------------------------|
-|Flávio              |  Cadastrar a ONG na plataforma.         | Receber doações de roupas              |                                
-|Márcia              |  Atualizar as necessidades de doação de | Mantenham as informações sobre os tipos| 
-|                    |                                         | e tamanhos de roupas mais necessários. |                               
-|Márcia              |                                         |                                        |
-|Flávio              |                                         |                                        |
-|Robson              |                                         |                                        |
+|EU COMO... `PERSONA`|    QUERO/PRECISO ... `FUNCIONALIDADE`   |         PARA ... `MOTIVO/VALOR`             |
+|--------------------|-----------------------------------------|---------------------------------------------|
+|Flávio              |  Cadastrar a ONG na plataforma.         | Receber doações de roupas                   |                           
+|Márcia              |  Atualizar as necessidades de doação de | Manter atualizada as informações sobre os   | 
+|                    |  roupas da organização.                 | tipos e tamanhos de roupas mais necessários.|                           
+|Robson              |                                         |                                             |
+|Amanda              |  Me cadastrar na plataforma.            | Encontrar pontos de coleta próximo para doar|
+|Jonas               |  Agendar coleta da minha doação.        | Para que as roupas sejam retiradas em minha |
+|                    |                                         | residência no horário conveniente.          |
 |Robson              |                                         |                                        |
 
 
 ## Requisitos
 
-- [Requisitos Funcionais (RF)]
+- Requisitos Funcionais (RF)
   
 |ID    |            Descrição do Requisito                                             | Prioridade |
 |------|-------------------------------------------------------------------------------|------------|
@@ -109,7 +110,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |RF-008| O site deve permitir visualizar o histórico de doações.                       |   BAIXA    | 
 |RF-009| O site deve fornecer um FAQ para sanar possíveis dúvidas do usuário.          |   BAIXA    |        
 
-- [Requisitos Não Funcionais (RNF)]
+- Requisitos Não Funcionais (RNF)
 
 |ID     |            Descrição do Requisito                     | Prioridade  |
 |-------|-------------------------------------------------------|-------------|

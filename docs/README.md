@@ -92,40 +92,35 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 - [Requisitos Funcionais (RF)]
   
-|ID    |            Descrição do Requisito                   | Prioridade |
-|------|-----------------------------------------------------|------------|
-|RF-001| O site deve permitir que os usuários se cadastrem   |   ALTA     |
-|      |  no sistema, com nome, email e senha. Além disso, é |            |
-|      |  permitido ao usuário editar ou deletar seu cadastro|            | 
-|RF-002| O site deve oferecer, durante o cadastro, a opção   |   ALTA     |
-|      |  de ser um usuário doador ou receptor.              |            |
-|RF-003| O site deve permitir ao usuário receptor escolher os|   ALTA     | 
-|      | tipos de roupas que ele deseja doar.                |            |
-|RF-004| O site deve permitir ao usuário doador dar sugestões|   MÉDIA    |
-|      | de roupas com maior demanda de doação.              |            |
-|RF-005| O site deve oferecer ao usuário a opção de agendar  |   MÉDIA    | 
-|      | a doação.                                           |            |
-|RF-006| O site deve solicitar o preenchimento de formulário |   MÉDIA    |
-|      | com informações do usuário.                         |            |
-|RF-007| O site deve permitir visualizar o histórico de      |   BAIXA    | 
-|      | doações.                                            |            |
-|RF-008| O site deve fornecer um FAQ para sanar possíveis    |   BAIXA    |        
-|      | dúvidas do usuário                                  |            |
-|RF-009| O site deve permitir verificar as notícias salvas   |   BAIXA    |
-|      | como preferidas.                                    |            |
+|ID    |            Descrição do Requisito                                             | Prioridade |
+|------|-------------------------------------------------------------------------------|------------|
+|RF-001| O site deve permitir que os usuários se cadastrem  no sistema, com nome, email|   ALTA     |
+|      | e senha. Além disso, é permitido ao usuário editar ou deletar seu cadastro.   |            |
+|RF-002| O site deve oferecer, durante o cadastro, a opção de ser pessoa física ou     |   ALTA     | 
+|      | jurídica.                                                                     |            |
+|RF-003| O site deve permitir ao usuário receptor escolher os tipos e tamanho de roupas|   ALTA     | 
+|      | que ele deseja doar.                                                          |            |
+|RF-004| O site deve fornecer a localização dos pontos de coleta das organizações      |   ALTA     |
+|      | cadastradas.                                                                  |            |
+|RF-005| O site deve permitir ao usuário doador dar sugestões de roupas com maior      |   MÉDIA    |
+|      | demanda de doação.                                                            |            |
+|RF-006| O site deve oferecer ao usuário a opção de agendar  a doação.                 |   MÉDIA    | 
+|RF-007| O site deve solicitar o preenchimento de formulário com informações do usuário|   MÉDIA    |
+|RF-008| O site deve permitir visualizar o histórico de doações.                       |   BAIXA    | 
+|RF-009| O site deve fornecer um FAQ para sanar possíveis dúvidas do usuário.          |   BAIXA    |        
 
 - [Requisitos Não Funcionais (RNF)]
 
-|ID     |            Descrição do Requisito                   | Prioridade  |
-|-------|-----------------------------------------------------|-------------|
-|RNF-001|O site deve ser publicado em um ambiente acessível   |   ALTA      |
-|       | publicamente na Internet.                           |             |
-|RNF-002| O site deverá ser responsivo permitindo a           |   ALTA      |
-|       | visualização em um celular de forma adequada.       |             |
-|RNF-003| O site não deve permitir que outros usuários alterem|  ALTA       | 
-|       | informações de outros perfis cadastrados.           |             |
-|RNF-004| O site deve ser compatível com os principais        |  ALTA       |
-|      | navegadores do mercado (Google Chrome, Firefox).     |             |
+|ID     |            Descrição do Requisito                     | Prioridade  |
+|-------|-------------------------------------------------------|-------------|
+|RNF-001| O site deve ser publicado em um ambiente acessível    |   ALTA      |
+|       | publicamente na Internet.                             |             |
+|RNF-002| O site deverá ser responsivo permitindo a visualização|   ALTA      |
+|       | em dispositivéis móveis de forma adequada.            |             |
+|RNF-003| O site não deve permitir que outros usuários alterem  |  ALTA       | 
+|       | informações de outros perfis cadastrados.             |             |
+|RNF-004| O site deve ser compatível com os principais          |  ALTA       |
+|       | navegadores do mercado (Google Chrome, Firefox, Edge).|             |
 
 ## Projeto de Interface
 

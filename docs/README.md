@@ -73,7 +73,7 @@ O público-alvo da plataforma de doação de roupas é bastante diversificado e 
 # 3. Concepção
 
 ## Processo de Design Thinking
-
+![design thinking](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/blob/master/docs/assets/files/processo-dt.pdf.pdf)
 ## Especificações do Projeto 
 
 ### Histórias de Usuários

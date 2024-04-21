@@ -77,16 +77,16 @@ O público-alvo da plataforma de doação de roupas é bastante diversificado e 
 
 Com base na análise das personas, foram identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`|    QUERO/PRECISO ... `FUNCIONALIDADE`   |         PARA ... `MOTIVO/VALOR`             |
-|--------------------|-----------------------------------------|---------------------------------------------|
-|Flávio              |  Cadastrar a ONG na plataforma.         | Receber doações de roupas                   |                           
-|Márcia              |  Atualizar as necessidades de doação de | Manter atualizada as informações sobre os   | 
-|                    |  roupas da organização.                 | tipos e tamanhos de roupas mais necessários.|                           
-|Robson              |                                         |                                             |
-|Amanda              |  Me cadastrar na plataforma.            | Encontrar pontos de coleta próximo para doar|
-|Jonas               |  Agendar coleta da minha doação.        | Para que as roupas sejam retiradas em minha |
-|                    |                                         | residência no horário conveniente.          |
-|Robson              |                                         |                                        |
+|EU COMO... `PERSONA`|    QUERO/PRECISO ... `FUNCIONALIDADE`   |         PARA ... `MOTIVO/VALOR`               |
+|--------------------|-----------------------------------------|-----------------------------------------------|
+|Flávio              |  Cadastrar a ONG na plataforma.         | Receber doações de roupas                     |                        
+|Márcia              |  Atualizar as necessidades de doação de | Manter atualizada as informações sobre os     | 
+|                    |  roupas da organização.                 | tipos e tamanhos de roupas mais necessários.  |                        
+|Robson              |  Acessar o histórico de doações da      | Avaliar o impacto das contribuições e planejar|
+|                    |  organização.                           | futuras campanhas de doação.                  |
+|Amanda              |  Me cadastrar na plataforma.            | Encontrar pontos de coleta próximo para doar. |
+|Jonas               |  Agendar coleta da minha doação.        | Para que as roupas sejam retiradas em minha   |
+|                    |                                         | residência no horário conveniente.            |
 
 
 ## Requisitos
@@ -118,9 +118,9 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |       | publicamente na Internet.                             |             |
 |RNF-002| O site deverá ser responsivo permitindo a visualização|   ALTA      |
 |       | em dispositivéis móveis de forma adequada.            |             |
-|RNF-003| O site não deve permitir que outros usuários alterem  |  ALTA       | 
+|RNF-003| O site não deve permitir que outros usuários alterem  |   ALTA      | 
 |       | informações de outros perfis cadastrados.             |             |
-|RNF-004| O site deve ser compatível com os principais          |  ALTA       |
+|RNF-004| O site deve ser compatível com os principais          |   ALTA      |
 |       | navegadores do mercado (Google Chrome, Firefox, Edge).|             |
 
 ## Projeto de Interface
@@ -135,16 +135,22 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ## Ferramentas
 
-|Ambiente                    |	Plataforma	|                  Link de Acesso                                                  |
-|----------------------------|--------------|----------------------------------------------------------------------------------|
-|Processo de Design Thinking |  Miro	      | https://miro.com/app/board/uXjVKZvbArk=/                                         |
-|Repositório de código	     |  GitHub	    |https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade.git|
-|Hospedagem do site	Heroku	 |  Heroku      |https://XXXXXXX.herokuapp.com                                                     |
-|Protótipo Interativo	       |  Figma	      |https://figma.com                                                                 |
+|Ambiente                    |	Plataforma	      |                  Link de Acesso                                                   |
+|----------------------------|--------------------|-----------------------------------------------------------------------------------|
+|Processo de Design Thinking |  Miro	          | https://miro.com/app/board/uXjVKZvbArk=/                                          |
+|Repositório de código	     |  GitHub	          | https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade.git|
+|Hospedagem do site	    	 |  Replit            | https://replit.com/                                                               |
+|Projeto de Interfaces	     |  Figma	          | https://figma.com/                                                                |
+|Editor de Código            |  Visual Studio Code| https://code.visualstudio.com/                                                    |
 
 ## Gestão do Projeto
+   - Utilização da ferramenta de controle de tarefas (Kanban).
+     ![quadro_tarefas](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/c08a1a5d-7f58-4253-b192-16cb12ebc96d)
 
 ## Controle de Versão
+
+
+
 
 **Referências Bibliográficas**:
 

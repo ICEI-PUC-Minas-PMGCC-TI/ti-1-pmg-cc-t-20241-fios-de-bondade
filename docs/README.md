@@ -137,14 +137,19 @@ Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do si
 
 - Tela de Apresentação
 ![tela apresentação](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/d2f71288-4b0d-46f4-a429-21cb9d636069)
+
 - Tela de Cadastro Pessoa Jurídica
 ![cadastro pessa jurídica](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/b298bd63-7518-4183-a91a-906af72c7f3a)
+
 -Tela de Cadastro de Pessoa Física
 ![cadastro pessa física](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/38788e77-a0de-484b-b7c5-0cb25f7b1a51)
+
 - Tela de Login
 ![login](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/10d04039-3144-4d73-9b66-f3b4c6e207e7)
+
 - Tela Principal 
 ![tela principal](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/f6867e7b-4e0c-4abf-8b76-87ae93504e98)
+
 - Tela de Doações
 ![tela doações](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/45654002-5ccd-4672-9ccc-761eceddc2ae)
 

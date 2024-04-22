@@ -23,7 +23,6 @@ Ciência da Computação
     - [Justificativa](#justificativa)
     - [Público-Alvo](#público-alvo)
 3. [Concepção](#concepção)
-    - [Projeto Design Thinking](#projeto-design-thinking)
     - [Especificações do Projeto](#especificações-do-projeto)
        - [Personas e Mapas de Empatia](#personas-e-mapas-de-empatia)
        - [Histórias de Usuários](#histórias-de-usuários)
@@ -31,12 +30,11 @@ Ciência da Computação
           - [Requisitos Funcionais](#requisitos-funcionais)
           - [Requisitos não Funcionais](#requisitos-não-funcionais)
        - Projeto de Interfaces
-          - User/Screen Flow e Protótipo interativo
-          - Wireframes
+          - User/Screen Flow 
+          - Wireframes e Protótipo
 4. [Metodologia](#metodologia)
     - [Ferramentas](#ferramentas)
-    - [Gestão do rojeto](#gestao-do-projeto)
-    - [Controle de Versão](#controle-de-versão)
+    - [Gestão do Projeto](#gestao-do-projeto)
 5. [Referências Bibliográficas](#referencias-bibliograficas)
 
 
@@ -54,17 +52,15 @@ Muitas pessoas desejam doar roupas para ajudar aqueles em situação de vulnerab
 
 O objetivo geral deste trabalho é a criação de um Sistema Web que facilite e promova a doação de roupas de forma confiável e segura.
 
-  - Elaborar um design intuitivo e responsivo para plataforma online de doação de roupas, assegurando a usabilidade e acessibilidade em diferentes dispositivos.
-  - Implementar um sistema de cadastro seguro para os usuários interessados em doar e em receber doações, garantindo a proteção e privacidade de seus dados.
-  - Integrar um sistema de localização para visualização dos pontos de coletas de ONGs e Instituições beneficiadas.
-  - Integrar um sistema de agendamento de coletas, permitindo que os doadores escolham datas e horários convenientes para a retirada das doações.
+Como objetivos específicos, ressalta-se:
+ - Elaborar um design intuitivo e responsivo para plataforma online de doação de roupas, assegurando a usabilidade e acessibilidade em diferentes dispositivos.
+ - Implementar um sistema de cadastro seguro para os usuários interessados em doar e em receber doações, garantindo a proteção e privacidade de seus dados.
+ - Integrar um sistema de localização para visualização dos pontos de coleta de ONGs e Instituições beneficiadas.
+ - Integrar um sistema de agendamento de coletas, permitindo que os doadores escolham datas e horários convenientes para a retirada das doações.
 
 ## Justificativa
 
-A cultura de doação  desempenha um papel crucial no fomento de uma sociedade mais justa e consciente. Através das doações, é 
-possível não apenas auxiliar indivíduos em situação de vulnerabilidade, proporcionando-lhes dignidade e conforto, mas também 
-promover a sustentabilidade ao incentivar o reuso de peças e reduzir o descarte inadequado, o que contribui significativamente 
-para a preservação ambiental. Para efetivar o processo de doação de roupas de forma eficiente, é imprescindível estabelecer uma comunicação eficaz entre os potenciais doadores e as instituições receptoras das doações, que posteriormente repassam as peças às pessoas necessitadas. No entanto, o sistema atual é muitas vezes burocrático e ineficiente, desestimulando potenciais doadores. A criação de uma plataforma online dedicada à doação de roupas visa simplificar e agilizar esse processo, facilitando a conexão direta entre doadores e instituições e garantindo uma distribuição eficaz das doações.
+A cultura de doação  desempenha um papel crucial no fomento de uma sociedade mais justa e consciente. Através das doações, é possível não apenas auxiliar indivíduos em situação de vulnerabilidade, proporcionando-lhes dignidade e conforto, mas também promover a sustentabilidade ao incentivar o reuso de peças e reduzir o descarte inadequado, o que contribui significativamente para a preservação ambiental. Para efetivar o processo de doação de roupas de forma eficiente, é imprescindível estabelecer uma comunicação eficaz entre os potenciais doadores e as instituições receptoras das doações, que posteriormente repassam as peças às pessoas necessitadas. No entanto, o sistema atual é muitas vezes burocrático e ineficiente, desestimulando potenciais doadores. A criação de uma plataforma online dedicada à doação de roupas visa simplificar e agilizar esse processo, facilitando a conexão direta entre doadores e instituições e garantindo uma distribuição eficaz das doações.
 
 ## Público-Alvo
 
@@ -72,9 +68,13 @@ O público-alvo da plataforma de doação de roupas é bastante diversificado e 
 
 # 3. Concepção
 
-## Processo de Design Thinking
-![design thinking](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/blob/master/docs/assets/files/processo-dt.pdf.pdf)
 ## Especificações do Projeto 
+As personas levantadas durante o processo de entendimento do problema são apresentadas nas imagens que se seguem.
+
+![Persona 1](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/8a200675-ccd6-4f60-a70e-0e58a96f72a5)
+![Persona 2)](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/64ff9c0f-ea0f-475f-b1a7-7e30db5b9ba7)
+![Persona 3)](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/0686b171-b1d3-421e-a427-8ef85114a412)
+
 
 ### Histórias de Usuários
 
@@ -82,13 +82,13 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`|    QUERO/PRECISO ... `FUNCIONALIDADE`   |         PARA ... `MOTIVO/VALOR`               |
 |--------------------|-----------------------------------------|-----------------------------------------------|
-|Flávio              |  Cadastrar a ONG na plataforma.         | Receber doações de roupas                     |                        
-|Márcia              |  Atualizar as necessidades de doação de | Manter atualizada as informações sobre os     | 
+|Flávio              |  cadastrar a ONG na plataforma.         | receber doações de roupas                     |                        
+|Márcia              |  atualizar as necessidades de doação de | manter atualizada as informações sobre os     | 
 |                    |  roupas da organização.                 | tipos e tamanhos de roupas mais necessários.  |                        
-|Robson              |  Acessar o histórico de doações da      | Avaliar o impacto das contribuições e planejar|
+|Robson              |  acessar o histórico de doações da      | avaliar o impacto das contribuições e planejar|
 |                    |  organização.                           | futuras campanhas de doação.                  |
-|Amanda              |  Me cadastrar na plataforma.            | Encontrar pontos de coleta próximo para doar. |
-|Jonas               |  Agendar coleta da minha doação.        | Para que as roupas sejam retiradas em minha   |
+|Amanda              |  me cadastrar na plataforma.            | encontrar pontos de coleta próximo para doar. |
+|Jonas               |  agendar coleta da minha doação.        | para que as roupas sejam retiradas em minha   |
 |                    |                                         | residência no horário conveniente.            |
 
 
@@ -96,22 +96,21 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 - Requisitos Funcionais (RF)
   
-|ID    |            Descrição do Requisito                                             | Prioridade |
-|------|-------------------------------------------------------------------------------|------------|
-|RF-001| O site deve permitir que os usuários se cadastrem  no sistema, com nome, email|   ALTA     |
-|      | e senha. Além disso, é permitido ao usuário editar ou deletar seu cadastro.   |            |
-|RF-002| O site deve oferecer, durante o cadastro, a opção de ser pessoa física ou     |   ALTA     | 
-|      | jurídica.                                                                     |            |
-|RF-003| O site deve permitir ao usuário receptor escolher os tipos e tamanho de roupas|   ALTA     | 
-|      | que ele deseja doar.                                                          |            |
-|RF-004| O site deve fornecer a localização dos pontos de coleta das organizações      |   ALTA     |
-|      | cadastradas.                                                                  |            |
-|RF-005| O site deve permitir ao usuário doador dar sugestões de roupas com maior      |   MÉDIA    |
-|      | demanda de doação.                                                            |            |
-|RF-006| O site deve oferecer ao usuário a opção de agendar  a doação.                 |   MÉDIA    | 
-|RF-007| O site deve solicitar o preenchimento de formulário com informações do usuário|   MÉDIA    |
-|RF-008| O site deve permitir visualizar o histórico de doações.                       |   BAIXA    | 
-|RF-009| O site deve fornecer um FAQ para sanar possíveis dúvidas do usuário.          |   BAIXA    |        
+|ID    |            Descrição do Requisito                                                | Prioridade |
+|------|----------------------------------------------------------------------------------|------------|
+|RF-001| O site deve permitir que os usuários se cadastrem  no sistema, após preencher um |   ALTA     |
+|      | um formulário. Além disso, é permitido ao usuário editar ou deletar seu cadastro.|            |
+|RF-002| O site deve oferecer, durante o cadastro, a opção de ser pessoa física ou        |   ALTA     | 
+|      | jurídica.                                                                        |            |
+|RF-003| O site deve permitir ao usuário receptor escolher os tipos e tamanho de roupas   |   ALTA     | 
+|      | que ele deseja doar.                                                             |            |
+|RF-004| O site deve fornecer a localização dos pontos de coleta das organizações         |   ALTA     |
+|      | cadastradas.                                                                     |            |
+|RF-005| O site deve permitir ao usuário pessoa jurídica fazer solicitações de roupas com |   MÉDIA    |
+|      | maiores demandas de doação.                                                      |            |
+|RF-006| O site deve oferecer ao usuário pessoa física a opção de agendar  a doação.      |   MÉDIA    | 
+|RF-007| O  site deve permitir visualizar o histórico de doações.                         |   BAIXA    |
+|RF-008| O site deve fornecer um FAQ para sanar possíveis dúvidas do usuário.             |   BAIXA    |    
 
 - Requisitos Não Funcionais (RNF)
 
@@ -130,8 +129,16 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ### User Flow
 
+![fluxo do usuário](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/c68b2030-e653-4d73-ac81-e65d6aa39467)
 
 ### Wireframes
+![tela apresentação](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/d2f71288-4b0d-46f4-a429-21cb9d636069)
+![cadastro pessa jurídica](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/b298bd63-7518-4183-a91a-906af72c7f3a)
+![cadastro pessa física](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/38788e77-a0de-484b-b7c5-0cb25f7b1a51)
+![login](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/10d04039-3144-4d73-9b66-f3b4c6e207e7)
+![tela principal](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/f6867e7b-4e0c-4abf-8b76-87ae93504e98)
+![tela doações](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/45654002-5ccd-4672-9ccc-761eceddc2ae)
+
 
 
 # Metodologia

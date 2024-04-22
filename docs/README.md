@@ -128,18 +128,25 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 ## Projeto de Interface
 
 ### User Flow
+Após entender o problema, foi estabelecido o fluxo de tela do usuário para mapear o caminho de interação dele com o produto digital. O fluxo a seguir (Figura 4), mostra  as telas que o usuário vai visualizar.
 
 ![fluxo do usuário](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/c68b2030-e653-4d73-ac81-e65d6aa39467)
 
 ### Wireframes
+Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. 
+
+- Tela de Apresentação
 ![tela apresentação](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/d2f71288-4b0d-46f4-a429-21cb9d636069)
+- Tela de Cadastro Pessoa Jurídica
 ![cadastro pessa jurídica](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/b298bd63-7518-4183-a91a-906af72c7f3a)
+-Tela de Cadastro de Pessoa Física
 ![cadastro pessa física](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/38788e77-a0de-484b-b7c5-0cb25f7b1a51)
+- Tela de Login
 ![login](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/10d04039-3144-4d73-9b66-f3b4c6e207e7)
+- Tela Principal 
 ![tela principal](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/f6867e7b-4e0c-4abf-8b76-87ae93504e98)
+- Tela de Doações
 ![tela doações](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/45654002-5ccd-4672-9ccc-761eceddc2ae)
-
-
 
 # Metodologia
 
@@ -154,17 +161,15 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 |Editor de Código            |  Visual Studio Code| https://code.visualstudio.com/                                                    |
 
 ## Gestão do Projeto
-   - Utilização da ferramenta de controle de tarefas (Kanban).
-     ![quadro_tarefas](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/c08a1a5d-7f58-4253-b192-16cb12ebc96d)
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. Para organização e distribuição das tarefas do projeto, a equipe está utilizando o Kanban. Esta ferramenta prioriza a produtividade e organização de tarefas, cuja estrutura consiste em um quadro dividido em três colunas, “todo”, “in progress” e “done”, tornando o fluxo de trabalho produtivo e eficiente. Quanto à divisão de tarefas, todas foram realizadas em conjuntos visando a maior integração e eficiência entre os membros da equipe.
 
-## Controle de Versão
-
-
+O quadro kanban do grupo no Github está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMGCC-TI/projects/22.
+![quadro_tarefas](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/c08a1a5d-7f58-4253-b192-16cb12ebc96d)
 
 
 **Referências Bibliográficas**:
 
-- [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-- [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-- [omo Montar Uma Justificativa do TCC Com Apenas 4 Perguntas](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/#google_vignette)
+- [Organização das Nações Unidas (ONU). ONU pede a consumidores de moda mais reflexão antes de comprar](https://news.un.org/pt/story/2022/10/1804067))
+- [Totvs. Kanban: conceito, como funciona, vantagens e implementação.]([https://www.youtube.com/watch?v=XfvQWnRgxG0](https://www.totvs.com/blog/negocios/kanban/#:~:text=O%20termo%20%E2%80%9CKanban%E2%80%9D%20%C3%A9%20de,ele%20se%20move%20pelo%20processo).
+- [Como Montar Uma Justificativa do TCC Com Apenas 4 Perguntas](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/#google_vignette)
 

@@ -175,6 +175,6 @@ O quadro kanban do grupo no Github está disponível através da URL https://git
 **Referências Bibliográficas**:
 
 - [Organização das Nações Unidas (ONU). ONU pede a consumidores de moda mais reflexão antes de comprar](https://news.un.org/pt/story/2022/10/1804067))
-- [Totvs. Kanban: conceito, como funciona, vantagens e implementação.]([https://www.youtube.com/watch?v=XfvQWnRgxG0](https://www.totvs.com/blog/negocios/kanban/#:~:text=O%20termo%20%E2%80%9CKanban%E2%80%9D%20%C3%A9%20de,ele%20se%20move%20pelo%20processo).
+- [Totvs. Kanban: conceito, como funciona, vantagens e implementação.](https://www.totvs.com/blog/negocios/kanban/#:~:text=O%20termo%20%E2%80%9CKanban%E2%80%9D%20%C3%A9%20de,ele%20se%20move%20pelo%20process)
 - [Como Montar Uma Justificativa do TCC Com Apenas 4 Perguntas](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/#google_vignette)
 

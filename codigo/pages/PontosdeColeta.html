@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos de Coleta</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="imagens/logo.png" alt="Logo do site" style="height: 30px; width: auto;"> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Doações</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container text-center mt-5">
+        <h1>Pontos de Coleta</h1>
+    </div>
+
+
+    <div class="container text-center mt-3">
+        <div class="input-group mb-3" style="max-width: 400px; margin: 0 auto;">
+            <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="CEP" aria-describedby="button-addon2" id="cepInput">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="searchButton" style="background-color: #38b6ff;">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-3">
+        <div id="map"></div>
+    </div>
+
+
+    <div class="container text-center mt-3">
+        <a href="#" class="btn btn-primary" id="donateButton" style="background-color:#38b6ff; border-radius: 4px;">Quero doar!</a>
+    </div>
+
+
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <h2 style="margin-left: 20px;">FAQ</h2>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Como encontrar um ponto de coleta próximo?
+            </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Digite seu CEP na caixa de busca acima e clique em "Buscar".</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Quais tipos de roupas posso doar?
+            </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Você pode doar qualquer tipo de roupa em bom estado, incluindo roupas de adulto, infantil, e acessórios.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Quais itens não são aceitos como doação?
+            </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Itens não aceitos como doação podem incluir roupas muito danificadas, sujas ou com mofo, bem como itens não relacionados a vestuário, como eletrônicos ou móveis.</div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Como faço para me tornar uma instituição cadastrada?
+            </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Para se tornar uma instituição cadastrada, entre em contato conosco através do formulário de contato em nosso site. Um representante entrará em contato para ajudá-lo com o processo de cadastro.</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container bg-light p-3 mt-5">
+    <p class="text-center"> Ciências da Computação Puc Minas</p>
+</div>
+
+    <script src="mapa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaeRwMFLpq7hQTtzNz5VvXR7ZlcigiNDY&callback=initMap"></script>
+</body>
+</html>

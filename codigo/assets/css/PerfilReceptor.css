@@ -564,6 +564,7 @@ main{
   display: flex;
   justify-content: space-between; 
   align-items: flex-end; 
+  margin-right: 5px;
 }
 
 #solicitacoes button {
@@ -632,3 +633,6 @@ h6{
    gap: 30px;
 }
 
+#btnMostrarDoacoes i {
+  margin-right: 5px;
+}

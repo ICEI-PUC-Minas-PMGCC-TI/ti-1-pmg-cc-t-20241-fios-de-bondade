@@ -95,11 +95,13 @@
           <section id="ti_intro">
             <h2>Introdução</h2>
             <h4>Projeto Fios de Bondade</h4>
-            <p class="lead">Este projeto tem como objetivo principal facilitar o processo de doação de roupas,
-                           conectando pessoas interessadas em doar com instituições e ONGs necessitadas.
-                           Nós (Apolo, Luis Henrique, Matheus e Rayssa), alunos do curso de Ciência da Computação da PUC Minas,
-                           visamos criar uma interface amigável, simples e intuitiva, tornando mais fácil e rápido para os doadores
-                            encontrarem e entrarem em contato com as instituições beneficiadas.</p>
+            <p class="lead" style="text-align:justify" >O aumento significativo no consumo de roupas nos últimos anos tem contribuído significativamente para a poluição 
+              global, com o setor de vestuário sendo responsável por gerar de 2% a 8% do volume de emissões de dióxido de carbono 
+              (Programa de Nações Unidas para o Meio Ambiente - Pnuma, 2022). Diante deste cenário, diversas ONGs e instituições enfatizam a 
+              importância da doação de roupas como uma forma de reduzir o impacto ambiental e ajudar aqueles que mais necessitam. No entanto, 
+              ara maximizar o alcance e eficácia das doações, é fundamental estabelecer uma comunicação eficaz entre os possíveis doadores e 
+              as instituições responsáveis pela recepção e distribuição das doações.
+            </p>
 
             <section id="ti_intro_info">
               <h4>Informações Gerais</h4>
@@ -107,14 +109,14 @@
                 <div class="col-12">
                   <ul class="list-unstyled">
                     <li><strong>Projeto:</strong> Fios de Bondade</li>
-                    <li><strong>Repositório GitHub:</strong> <a href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/tree/master">Template Trabalho Interdisciplinar</a>
+                    <li><strong>Repositório GitHub:</strong> <a href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/tree/master">Fios de Bondade</a>
                     </li>
                     <li><strong>Membros da equipe:</strong>
                       <ul>
-                        <li><a href="https://github.com/fulano">Luis Henrique</a></li>
-                        <li><a href="https://github.com/beltrano">Matheus Greco</a></li>
-                        <li><a href="https://github.com/cicrano">Apolo Ribeiro</a></li>
-                        <li><a href="https://github.com/cicrano">Rayssa Mell</a></li>
+                        <li><a href="https://github.com/apolobagattini">Apolo Ribeiro</a></li>
+                        <li><a href="https://github.com/LuisHenriqueDC301">Luis Henrique</a></li>
+                        <li><a href="https://github.com/GRECO-flameel">Matheus Greco</a></li>
+                        <li><a href="https://github.com/rayssamell">Rayssa Mell</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -135,7 +137,7 @@
               <div class="alert alert-warning collapse" role="alert" id="collapseProblema">
                 Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
               </div>
-              <p>Muitas pessoas desejam doar roupas para ajudar aqueles em situação de vulnerabilidade, porém frequentemente enfrentam obstáculos no processo. A falta de informações transparentes sobre locais de doação, procedimentos para agendar as doações e a real necessidade das instituições beneficiadas pode desmotivar potenciais doadores. Paralelamente, organizações e indivíduos que dependem dessas doações enfrentam desafios para se conectar com doadores de forma eficiente e segura. Diante disso, o problema central que este projeto busca resolver é a carência de uma plataforma que facilite e centralize a conexão entre doadores e instituições, assegurando a confiabilidade, segurança e eficácia das doações realizadas.
+              <p>Muitas pessoas desejam doar roupas para ajudar aqueles em situação de vulnerabilidade, porém frequentemente enfrentam obstáculos no processo. A falta de informações transparentes sobre locais de doação, procedimentos para agendar as doações e a real necessidade das instituições beneficiadas podem desmotivar potenciais doadores. Paralelamente, organizações e indivíduos que dependem dessas doações enfrentam desafios para se conectar com doadores de forma eficiente e segura. Diante disso, o problema central que este projeto busca resolver é a carência de uma plataforma que facilite e centralize a conexão entre doadores e instituições, assegurando a confiabilidade, segurança e eficácia das doações realizadas.
               </p>
             </section>
 
@@ -145,8 +147,14 @@
               <div class="alert alert-warning collapse" role="alert" id="collapseObjetivos">
                 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
               </div>
-              <p>O objetivo geral deste trabalho é a criação de um Sistema Web que facilite e promova a doação de roupas de forma confiável e segura.
-                </p>
+              <p>O objetivo geral deste trabalho é a criação de um Sistema Web que facilite e promova a doação de roupas de forma confiável e segura.</p>
+              <ul style="text-align: justify;">
+                <p>Como objetivos específicos, ressalta-se:</p>
+                <li> Elaborar um design intuitivo e responsivo para plataforma online de doação de roupas, assegurando a usabilidade e <br> acessibilidade em diferentes dispositivos.</li>
+                <li> Integrar um sistema de localização para visualização dos pontos de coleta  de ONGs e Instituições beneficiadas.</li>
+                <li> Integrar um sistema de agendamento de coletas, permitindo que os doadores escolham datas e horários convenientes <br>  para a retirada das doações.</li>
+                
+              </ul>
             </section>
 
             <section>
@@ -155,7 +163,14 @@
               <div class="alert alert-warning collapse" role="alert" id="collapseJustificativa">
                 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software. O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
               </div>
-              <p>A doação de roupas é essencial para ajudar pessoas em vulnerabilidade e promover a sustentabilidade ao reduzir o descarte inadequado. No entanto, o sistema atual é burocrático e ineficiente, desencorajando doações. Uma solução proposta é criar uma plataforma online que facilite a comunicação entre doadores e instituições receptoras, tornando o processo de doação mais simples e eficaz.
+              <p style="text-align: justify;">
+                A cultura de doação  desempenha um papel crucial no fomento de uma sociedade mais justa e consciente. Através das doações, é possível não 
+                apenas auxiliar indivíduos em situação de vulnerabilidade, proporcionando-lhes dignidade e conforto, mas também promover a sustentabilidade 
+                ao incentivar o reuso de peças e reduzir o descarte inadequado, o que contribui significativamente para a preservação ambiental. Para efetivar o 
+                processo de doação de roupas de forma eficiente, é imprescindível estabelecer uma comunicação eficaz entre os potenciais doadores e as instituições 
+                receptoras das doações, que posteriormente repassam as peças às pessoas necessitadas. No entanto, o sistema atual é muitas vezes burocrático e ineficiente, 
+                desestimulando potenciais doadores. A criação de uma plataforma online dedicada à doação de roupas visa simplificar e agilizar esse processo, facilitando a 
+                conexão direta entre doadores e instituições e garantindo uma distribuição eficaz das doações.
               </p>
             </section>
 
@@ -166,7 +181,10 @@
                 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
                 Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
               </div>
-              <p>O público-alvo da plataforma de doação de roupas é bastante diversificado e composto por indivíduos interessados em realizar doações e instituições e ONGs que atuam com pessoas em situação de vulnerabilidade e que necessitam dessas contribuições. Os indivíduos que desejam doar roupas podem pertencer a diversas faixas etárias e backgrounds socioeconômicos. Em relação à hierarquia, esses doadores atuam de forma independente em suas ações de doação. Por outro lado, as instituições e ONGs beneficiadas pela plataforma incluem diversos tipos de organizações, tais como abrigos, instituições religiosas, centros de acolhimento e entidades de assistência social, entre outras.
+              <p style="text-align: justify;">
+                O público-alvo da plataforma de doação de roupas é composto por dois principais segmentos: indivíduos doadores e instituições beneficentes. Os doadores são pessoas de diferentes faixas etárias e origens socioeconômicas, unidas pelo desejo de contribuir para o bem-estar social. Esses doadores podem ser: jovens e adultos: pessoas entre 18 e 65 anos, com uma consciência 
+                social desenvolvida, interessadas em ajudar as comunidades. E os receptores são as instituições beneficiadas pela plataforma, as quais incluem uma variedade de organizações que trabalham com pessoas em situação de vulnerabilidade, tais como: Instituições Religiosas que promovem ações sociais e distribuem doações a comunidades carentes ou ONGs de Assistência Social, 
+                entidades não governamentais dedicadas a diferentes causas sociais, desde apoio a refugiados até assistência a famílias de baixa renda.
               </p>
             </section>
 
@@ -390,11 +408,14 @@
                   </p>
                 </div>
                 <p><img src="assets/images/fluxo do usuário.png" alt="fluxo do usuario"></p>
-              </section>
+                <p> Para melhor visualização acesse: 
+                  <a href="https://www.figma.com/design/sDgDJDKH2rflnW2TfHTOaD/Wireframing-in-Figma?node-id=0-1">Protótipo - Figma</a>
+                </p>
+                </section>
 
               <section>
                 <h5>Wireframes</h5>
-                <p>Protótipo de telas do sistema em baixa fidelidade (rascunhos).
+                <p>Protótipo de telas do sistema.
                   <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseWireframes">Info</button>
                 </p>
                 <div class="alert alert-warning collapse" role="alert" id="collapseWireframes">
@@ -402,10 +423,12 @@
                 </div>
                 <p><img src="assets/images/tela apresentacao.png" alt="tela apresentação"></p>
                 <p><img src="assets/images/tela cadastro pj.png" alt="tela cadastro essoa jurídica"></p>
-                <p><img src="assets/images/tela cadastro pf.png.png" alt="tela cadastro pessa física"></p>
+                <p><img src="assets/images/tela cadastro pf.png" alt="tela cadastro pessa física"></p>
                 <p><img src="assets/images/tela login.png" alt="tela login"></p>
                 <p><img src="assets/images/tela principal.png" alt="tela principal"></p>
                 <p><img src="assets/images/tela doacoes.png" alt="tela doações"></p>
+                <p><img src="assets/images/perfil_doador.png" alt="tela de perfil do doador"></p>
+                <p><img src="assets/images/perfil_receptor.png" alt="tela de perfil do receptor"></p>
               </section>
 
             </section>
@@ -444,27 +467,27 @@
                     <tr>
                         <td>Processo de Design Thinking</td>
                         <td>Miro</td>
-                        <td><a href="https://miro.com/app/board/uXjVKZvbArk=/">https://miro.com/app/board/uXjVKZvbArk=/</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://miro.com/app/board/uXjVKZvbArk=/">https://miro.com/app/board/uXjVKZvbArk=/</a></td>
                     </tr>
                     <tr>
                         <td>Repositório de código</td>
                         <td>GitHub</td>
-                        <td><a href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade.git">https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade.git</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade.git">https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade.git</a></td>
                     </tr>
                     <tr>
                         <td>Hospedagem do site</td>
                         <td>Replit</td>
-                        <td><a href="https://replit.com/">https://replit.com/</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://replit.com/">https://replit.com/</a></td>
                     </tr>
                     <tr>
                         <td>Protótipo Interativo</td>
                         <td>Figma</td>
-                        <td><a href="https://www.figma.com/file/sDgDJDKH2rflnW2TfHTOaD/Wireframing-in-Figma?type=design&node-id=0-1&mode=design&t=7gOpKkplvse3pXVi-0">https://figma.com/7gOpKkplvse3pXVi-0</a><span class="exemplo">EXEMPLO</span></td>
+                        <td><a href="https://www.figma.com/design/sDgDJDKH2rflnW2TfHTOaD/Wireframing-in-Figma?node-id=0-1">https://figma.com/7gOpKkplvse3pXVi-0</a></td>
                     </tr>
                     <tr>
                       <td>Editor de Código Fonte</td>
                       <td>Visual Studio Code</td>
-                      <td><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a><span class="exemplo">EXEMPLO</span></td>
+                      <td><a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -531,7 +554,7 @@
               </div>
 
               <section>
-                <h5>Funcionalidade 1 - Cadastro de Contatos<span class="exemplo">EXEMPLO</span></h5>
+                <h5>Funcionalidade 1 - Cadastro de Contatos</h5>
                 <p>Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema</p>
                 <ul class="list-unstyled">
                   <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Contatos</a></li>
@@ -557,7 +580,7 @@
               </div>
 
               <section>
-                <h5>Estrutura de Dados - Contatos<span class="exemplo">EXEMPLO</span></h5>
+                <h5>Estrutura de Dados - Contatos</h5>
                 <p>Contatos da aplicação</p>
                 <pre>
                   {
@@ -573,7 +596,7 @@
               </section>
 
               <section>
-                <h5>Estrutura de Dados - Usuários<span class="exemplo">EXEMPLO</span></h5>
+                <h5>Estrutura de Dados - Usuários</h5>
                 <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
                 <pre>
                   {
@@ -601,22 +624,22 @@
               <section>
                 <h5>Images:</h5>
                 <ul>
-                  <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a></li>
                 </ul>
               </section>
 
               <section>
                 <h5>Fonts:</h5>
                 <ul>
-                  <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
                 </ul>
               </section>
 
               <section>
                 <h5>Scripts:</h5>
                 <ul>
-                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a><span class="exemplo">EXEMPLO</span></li>
-                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
                 </ul>
               </section>
             </section>
@@ -634,7 +657,7 @@
               <p>Apresente uma lista de perguntas e respostas comuns associadas ao projeto. Inclua perguntas como: (1) detalhes de acesso e uso do projeto; (2) informações sobre a instalação e configuração da aplicação; (3) questões sobre a manutenção da aplicação; (4) detalhes sobre a integração da aplicação com outros sistemas; (5) questões sobre a segurança da aplicação.</p>
             </div>
 
-            <span class="exemplo">EXEMPLO</span>
+            
             <div class="row">
               <div class="col-lg-12">
                 <div class="accordion accordion-alterate arrow-right" id="popularTopics">
@@ -691,7 +714,21 @@
             <div class="alert alert-warning collapse" role="alert" id="collapseReferencias">
               <p>Apresente as referências bibliográficas utilizadas no projeto. Inclua itens como: (1) livros, artigos, tutoriais, etc. utilizados no desenvolvimento da solução; (2) links para sites, blogs, etc. utilizados no desenvolvimento da solução.</p>
             </div>
-            <p>......  COLOQUE AQUI O SEU TEXTO ......</p>
+            <p>Cassio, Amanda. Voluntas mostram como a doação de roupas pode ajudar as pessoas e o meio ambiente. Disponível em: 
+              <https://www.greenpeace.org/brasil/blog/voluntas-mostram-como-a-doacao-de-roupas-pode-ajudar-as-pessoas-e-o-meio-ambiente/>. Acesso em: 15 de abril de 2024.
+            </p>
+            <p>Favero, Jader Batista. Como Montar Uma Justificativa do TCC Com Apenas 4 Perguntas. Disponível em: 
+              <https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/#google_vignette>. Acesso em: 7 de abril de 2024.
+            </p>
+            <p>GIFE. Transparência e prestação de contas ainda são desafios para doadores e organizações, aponta estudo. Disponível em: 
+              <https://gife.org.br/transparencia-e-prestacao-de-contas-ainda-sao-desafios-para-doadores-e-organizacoes-aponta-estudo/>. Acesso em: 7 de abril de 2024.
+            </p>
+            <p>Organização das Nações Unidas (ONU). ONU pede a consumidores de moda mais reflexão antes de comprar. Disponível em: 
+              <https://news.un.org/pt/story/2022/10/1804067>. Acesso em: 7 de abril de 2024. 
+            </p>
+            <p>Totvs. Kanban: conceito, como funciona, vantagens e implementação. Disponível em: 
+              <https://www.totvs.com/blog/negocios/kanban/#:~:text=O%20termo%20%E2%80%9CKanban%E2%80%9D%20%C3%A9%20de,ele%20se%20move%20pelo%20processo.> . Acesso em: 15 de abril de 2024.
+            </p>
           </section>
 
         </div>

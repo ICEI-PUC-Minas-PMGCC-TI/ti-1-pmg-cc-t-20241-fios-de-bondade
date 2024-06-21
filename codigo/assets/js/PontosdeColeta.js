@@ -11,10 +11,12 @@ function initMap() {
 
     const urlReceptores = "/Receptores";
 
+    
     fetch(urlReceptores)
         .then(response => response.json())
         .then(dados => {
             console.log(dados);
+            
             const ceps = dados.map(receptor => {
                 return {
                     cep: receptor.endereco[0].cep,
@@ -22,6 +24,7 @@ function initMap() {
                 };
             });
 
+            
             ceps.forEach(point => {
                 geocodeCEP(point);
             });
@@ -29,20 +32,24 @@ function initMap() {
         .catch(error => console.error('Erro ao buscar dados dos receptores:', error));
 }
 
+
 function geocodeCEP(point) {
     geocoder.geocode({'address': point.cep}, function(results, status) {
         if (status === 'OK') {
             console.log('CEP: ' + point.cep + ', Latitude: ' + results[0].geometry.location.lat() + ', Longitude: ' + results[0].geometry.location.lng());
 
+            
             const infowindow = new google.maps.InfoWindow({
                 content: '<h3>' + point.title + '</h3>'
             });
 
+            
             const marker = new google.maps.Marker({
                 map: map,
                 position: results[0].geometry.location
             });
 
+           
             marker.addListener('click', function() {
                 infowindow.open(map, marker);
             });
@@ -51,6 +58,7 @@ function geocodeCEP(point) {
         }
     });
 }
+
 
 document.getElementById('searchButton').addEventListener('click', function() {
     const cepInput = document.getElementById('cepInput').value;
@@ -61,6 +69,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
     }
 });
 
+
 function searchCEP(cep) {
     geocoder.geocode({'address': cep}, function(results, status) {
         if (status === 'OK') {
@@ -68,7 +77,6 @@ function searchCEP(cep) {
             map.setCenter(location);
             map.setZoom(15); 
 
-            
         } else {
             alert('Geocodificação falhou devido a: ' + status);
         }

@@ -8,22 +8,27 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #38b6ff; padding-right: 3%; padding-left: 3%;">
-        <a class="navbar-brand" href="#">
-            <img src="../assets/images/logo.png" alt="Logo do site" style="height: 100px; width: auto;">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Doações</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg static-top" style="background-color: #0f79ba;">
+        <div class="container">
+            <a class="navbar-brand" style="color: black;" href="#">
+                <img src="./assets/img/logo.png" class="img-fluid" style="max-width: 100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: black;" aria-current="page" href="#">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: black;" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: black;" href="#">Sobre Nós</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -79,7 +84,7 @@
                 </select>
             </div>
             <div class="col-md-2">
-                <label for="inputZip" class="form-label">CEP</label>
+                <label for="inputCEP" class="form-label">CEP</label>
                 <input type="text" class="form-control" id="inputCEP">
             </div>
             <div id="additionalFields" class="w-100"></div>
@@ -127,6 +132,6 @@
             $('input[name="option"]:checked').change();
         });
     </script>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

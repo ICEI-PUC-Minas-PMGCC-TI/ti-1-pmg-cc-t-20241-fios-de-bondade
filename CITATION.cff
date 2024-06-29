@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-cff-version: 1.2.0
+cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: Fios de Bondade
+title: Sistema de Doação de Roupas - Fios de Bondade
 authors:
   - family-names: Ribeiro Bagattini
     given-names: Apolo
@@ -22,7 +22,7 @@ authors:
 keywords:
   - Doação
   - Roupas
-  - Pontos de Coleta
+  - Instituições
 repository-code: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade
 license: CC-BY-4.0
 version: 1.0.0

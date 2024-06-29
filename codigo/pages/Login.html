@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+          <img src="../assets/images/logo.png" alt="Logo" />
+        </div>
+        <div class="links">
+          <ul>
+            <li class="nav-item" ><a href="../index.html">Início</a></li>
+            <li class="nav-item"><a href="CadastroDoacoes.html">Doações</a></li>
+            <li class="nav-item"><a href="PontosdeColeta.html">Pontos de Coleta</a></li>
+              <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+        <div class="overlay"></div>
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-6 md-6">
+        <div class="card bg-white" style="padding: 15px;">
+          <div class="card-body bg-white">
+            <h2 class="card-title">Login</h2>
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="cpfCnpj">CPF/CNPJ</label>
+                <input type="text" class="form-control" id="cpfCnpj" name="cpfCnpj" placeholder="Digite seu CPF ou CNPJ" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
+              </div>
+              <button type="submit" class="btn-default">Entrar</button>
+            </form>
+            <p class="mt-3">Não possui cadastro? <a href="/pages/CadastroPessoas.html">Cadastre-se aqui</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var cpfCnpj = document.getElementById('cpfCnpj').value;
+      var password = document.getElementById('password').value;
+
+      console.log("CPF/CNPJ:", cpfCnpj);
+      console.log("Password:", password);
+
+      const urlReceptores = '/Receptores';
+      const urlDoadores = '/Doadores';
+
+      fetch(urlDoadores) //  buscar dados de Doadores
+        .then(response => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok " + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log("Data loaded from Doadores:", data);
+          var users = data;
+          var userFound = false;
+          var userType = null;
+          var userId = null;
+          
+          
+          users.forEach(user => {
+            console.log("Checking doador:", user);
+            if (user.id === cpfCnpj && user.password === password) {
+              userFound = true;
+              userType = "Doadores";
+              userId = user.id; 
+              console.log("Found doador:", user);
+            }
+          });
+
+          
+          if (!userFound) {
+            fetch(urlReceptores)
+              .then(response => {
+                if (!response.ok) {
+                  throw new Error("Network response was not ok " + response.statusText);
+                }
+                return response.json();
+              })
+              .then(data => {
+                console.log("Data loaded from Receptores:", data);
+
+               
+                data.forEach(user => {
+                  console.log("Checking receptor:", user);
+                  if (user.id === cpfCnpj && user.password === password) {
+                    userFound = true;
+                    userType = "Receptores";
+                    userId = user.id; 
+                    console.log("Found receptor:", user);
+                  }
+                });
+
+               
+                if (userFound) {
+                 
+                  localStorage.setItem('userId', userId);
+                  if (userType === "Doadores") {
+                    window.location.href = "PerfilUsuario.html";
+                  } else if (userType === "Receptores") {
+                    window.location.href = "perfil_receptor.html";
+                  }
+                } else {
+                  alert("Usuário não encontrado ou senha incorreta. Tente novamente.");
+                }
+              })
+              .catch(error => {
+                console.error('Erro ao buscar dados de Receptores:', error);
+              });
+          } else {
+            window.location.href = "PerfilUsuario.html";
+          }
+        })
+        .catch(error => {
+          console.error('Erro ao buscar dados de Doadores:', error);
+        });
+    });
+  </script>
+
+</body>
+   <footer>
+     
+     <div class="text-center p-2" style="background-color: #41b8fd;">
+       © 2024 Copyright:
+       <a style="color: #1d1d1d;bottom: 0px;" href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade">Fios de Bondade</a>
+     </div>
+    
+  </footer>
+</html>

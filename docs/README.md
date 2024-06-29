@@ -16,26 +16,26 @@ Ciência da Computação
 
 ## Estrutura da Documentação
 
-1. [Introdução](#introdução)
-2. [Contexto](#contexto)
-    - [Problema](#problema)
-    - [Objetivos](#objetivos)
-    - [Justificativa](#justificativa)
-    - [Público-Alvo](#público-alvo)
-3. [Concepção](#concepção)
-    - [Especificações do Projeto](#especificações-do-projeto)
-       - [Personas e Mapas de Empatia](#personas-e-mapas-de-empatia)
-       - [Histórias de Usuários](#histórias-de-usuários)
-       - [Requisitos](#requisitos)
-          - [Requisitos Funcionais](#requisitos-funcionais)
-          - [Requisitos não Funcionais](#requisitos-não-funcionais)
+1. [Introdução](#Introdução)
+2. [Contexto](#Contexto)
+   - [Problema](#Problema)
+   - [Objetivos](#Objetivos)
+   - [Justificativa](#Justificativa)
+   - [Público-Alvo](#Público-Alvo)
+3. [Concepção](#Concepção)
+    - [Especificações do Projeto](#Especificações-do-Projeto)
+       - [Personas e Mapas de Empatia](#Personas-e-Mapas-de-Empatia)
+       - [Histórias de Usuários](#Histórias-de-Usuários)
+       - [Requisitos](#Requisitos)
+          - [Requisitos Funcionais](#Requisitos-Funcionais)
+          - [Requisitos não Funcionais](#Requisitos-não-Funcionais)
        - Projeto de Interfaces
           - User/Screen Flow 
           - Wireframes e Protótipo
-4. [Metodologia](#metodologia)
-    - [Ferramentas](#ferramentas)
-    - [Gestão do Projeto](#gestao-do-projeto)
-5. [Referências Bibliográficas](#referencias-bibliograficas)
+4. [Metodologia](#Metodologia)
+    - [Ferramentas](#Ferramentas)
+    - [Gestão do Projeto](#Gestao-do-Projeto)
+5. [Referências Bibliográficas](#Referencias-Bibliograficas)
 
 
 # 1. Introdução 
@@ -81,7 +81,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 |EU COMO... `PERSONA`|    QUERO/PRECISO ... `FUNCIONALIDADE`   |         PARA ... `MOTIVO/VALOR`               |
 |--------------------|-----------------------------------------|-----------------------------------------------|
-|Flávio              |  cadastrar a ONG na plataforma.         | receber doações de roupas                     |                        
+|Flávio              |  cadastrar a ONG na plataforma.         | receber doações de roupas.                     |                        
 |Márcia              |  atualizar as necessidades de doação de | manter atualizada as informações sobre os     | 
 |                    |  roupas da organização.                 | tipos e tamanhos de roupas mais necessários.  |                        
 |Robson              |  acessar o histórico de doações da      | avaliar o impacto das contribuições e planejar|
@@ -127,9 +127,9 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 ## Projeto de Interface
 
 ### User Flow
-Após entender o problema, foi estabelecido o fluxo de tela do usuário para mapear o caminho de interação dele com o produto digital. O fluxo a seguir (Figura 4), mostra  as telas que o usuário vai visualizar.
+Após entender o problema, foi estabelecido o fluxo de tela do usuário para mapear o caminho de interação dele com o produto digital. O fluxo a seguir, mostra  as telas que o usuário vai visualizar.
 
-![fluxo do usuário](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/c68b2030-e653-4d73-ac81-e65d6aa39467)
+![fluxo do usuário](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/blob/master/docs/assets/images/fluxo%20do%20usu%C3%A1rio.png)
 
 Para melhor visualização acesse:  https://www.figma.com/design/sDgDJDKH2rflnW2TfHTOaD/Wireframing-in-Figma?node-id=0-1
 Para visualização do Protótipo Interativo acesse: https://www.figma.com/proto/RCRZJsFUrpQPk9XJbm83Wb/Prot%C3%B3tipo-Interativo?node-id=2107-3369&starting-point-node-id=2107%3A3369
@@ -137,37 +137,38 @@ Para visualização do Protótipo Interativo acesse: https://www.figma.com/proto
 ### Wireframes
 Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. 
 
-- Tela de Apresentação
-    A tela de apresentação mostra ao usuário algumas das funcionalidades do sistema e à que ele terá acesso ao usar a plataforma.
-![tela apresentação](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/d2f71288-4b0d-46f4-a429-21cb9d636069)
+- Tela de Apresentação: A tela de apresentação mostra ao usuário algumas das funcionalidades do sistema e à que ele terá acesso ao usar a plataforma.
+  
+    ![tela apresentação](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/d2f71288-4b0d-46f4-a429-21cb9d636069)
 
-- Tela de Cadastro
-    A tela de cadastro do usuário apresenta opção de pessoa física ou jurídica. As informações preenchidas dependem da opção escolhida.
-    - Pessoa Jurídica
-![cadastro pessa jurídica](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/b298bd63-7518-4183-a91a-906af72c7f3a)
+- Tela de Cadastro: A tela de cadastro do usuário apresenta opção de pessoa física ou jurídica. As informações preenchidas dependem da opção escolhida.
+     - Pessoa Jurídica
+      
+    ![cadastro pessa jurídica](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/b298bd63-7518-4183-a91a-906af72c7f3a)
 
-    - Pessoa Física
-![cadastro pessa física](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/38788e77-a0de-484b-b7c5-0cb25f7b1a51)
+     - Pessoa Física
+    
+    ![cadastro pessa física](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/38788e77-a0de-484b-b7c5-0cb25f7b1a51)
 
-- Tela de Login
-     Se o usuário já estiver cadastrado na plataforma, ele terá a opção de fazer login.
-![login](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/10d04039-3144-4d73-9b66-f3b4c6e207e7)
+- Tela de Login: Se o usuário já estiver cadastrado na plataforma, ele terá a opção de fazer login.
+  
+    ![login](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/10d04039-3144-4d73-9b66-f3b4c6e207e7)
 
-- Tela Principal
-      A tela principal fornece ao usuário a localização dos pontos de coleta das organizações cadastradas, além de sanar possíveis dúvidas por meio de um FAQ. Além disso, ao clicar no botão “Quero Doar”, o usuário é encaminhado para a tela de doações.
-![tela principal](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/f6867e7b-4e0c-4abf-8b76-87ae93504e98)
+- Tela Principal: A tela principal fornece ao usuário a localização dos pontos de coleta das organizações cadastradas, além de sanar possíveis dúvidas por meio de um FAQ. Além disso, ao clicar no botão “Quero Doar”, o usuário é encaminhado para a tela de doações.
+  
+    ![tela principal](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/f6867e7b-4e0c-4abf-8b76-87ae93504e98)
 
-- Tela de Doações
-      A tela de realizar a doação permite ao usuário preencher tipo, tamanho e situação das roupas que serão doadas. Além disso, é possível agendar a doação com a ONG, com base na data e horário que sejam convenientes para ele.
-![tela doações](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/45654002-5ccd-4672-9ccc-761eceddc2ae)
+- Tela de Doações: A tela de realizar a doação permite ao usuário preencher tipo, tamanho e situação das roupas que serão doadas. Além disso, é possível agendar a doação com a ONG, com base na data e horário que sejam convenientes para ele.
+  
+    ![tela doações](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/45654002-5ccd-4672-9ccc-761eceddc2ae)
 
-- Tela Perfil Receptor
-      A tela de perfil do receptor apresenta as informações fornecidas durante o cadastro e permite a ele atualizar ou excluir seu perfil, fazer solicitações de roupas e visualizar o histórico de doações recebidas.
-![tela perfil_receptor](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/blob/master/docs/assets/images/perfil_receptor.png)
+- Tela Perfil Receptor: A tela de perfil do receptor apresenta as informações fornecidas durante o cadastro e permite a ele atualizar ou excluir seu perfil, fazer solicitações de roupas e visualizar o histórico de doações recebidas.
+  
+    ![tela perfil_receptor](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/blob/master/docs/assets/images/perfil_receptor.png)
 
-- Tela Perfil Doador
-      A tela de perfil do receptor apresenta as informações fornecidas durante o cadastro e permite a ele atualizar ou excluir seu perfil e visualizar o histórico de doações realizadas.
-![tela perfil_doador](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/blob/master/docs/assets/images/perfil_receptor.png)
+- Tela Perfil Doador: A tela de perfil do daodor apresenta as informações fornecidas durante o cadastro e permite a ele atualizar ou excluir seu perfil e visualizar o histórico de doações realizadas.
+  
+    ![tela perfil_doador](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/blob/master/docs/assets/images/perfil_receptor.png)
 
 # Metodologia
 

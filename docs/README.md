@@ -16,26 +16,26 @@ Ciência da Computação
 
 ## Estrutura da Documentação
 
-1. [Introdução]
-2. [Contexto]
-   - [Problema]
-   - [Objetivos]
-   - [Justificativa]
-   - [Público-Alvo]
-3. [Concepção]
-    - [Especificações do Projeto]
-       - [Personas e Mapas de Empatia]
-       - [Histórias de Usuários]
-       - [Requisitos]
-          - [Requisitos Funcionais]
-          - [Requisitos não Funcionais]
+1. Introdução
+2. Contexto
+   - Problema
+   - Objetivos
+   - Justificativa
+   - Público-Alvo
+3. Concepção
+    - Especificações do Projeto
+       - Personas e Mapas de Empatia
+       - Histórias de Usuários
+       - Requisitos
+          - Requisitos Funcionais
+          - Requisitos não Funcionais
        - Projeto de Interfaces
           - User/Screen Flow 
           - Wireframes e Protótipo
-4. [Metodologia]
-    - [Ferramentas]
-    - [Gestão do Projeto]
-5. [Referências Bibliográficas]
+4. Metodologia
+    - Ferramentas
+    - Gestão do Projeto
+5. Referências Bibliográficas
 
 
 # 1. Introdução 

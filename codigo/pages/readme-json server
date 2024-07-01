@@ -1,22 +1,8 @@
 Para visualização das páginas é necessário acessar o replit devido ao uso do Json server,
 para isso você deve:
 
-- Página de Perfil do Receptor
-1 - Acessar o link do projeto-> https://replit.com/@rayssamell1/JSONServerAPP
+1 - Acessar o link do projeto-> https://replit.com/@matheusgrecodal/Json-TI-Fios-de-Bondade-1
 2 - Realizar o "fork" do repositório.
 3-  Após carregar é só da "Run" para visualizar a página de perfil.
 
-- Página de Cadastro de Usuários
-1 - Acessar o link do projeto-> https://replit.com/@lhfcosta/JSONServer
-2 - Realizar o "fork" do repositório.
-3-  Após carregar é só da "Run" para visualizar a página de cadastro de pessoas
-
-- Página de Cadastro de Doações
-1 - Acessar o link do projeto-> https://replit.com/@apolobagattini/JSONServer?v=1
-2 - Realizar o "fork" do repositório.
-3-  Após carregar é só da "Run" para visualizar a página de cadastro de pessoas
-
-- Página de Potnos de Coleta
-1 - Acessar o link do projeto-> https://replit.com/@matheusgrecodal/JSONServer
-2 - Realizar o "fork" do repositório.
-3-  Após carregar é só da "Run" para visualizar a página de cadastro de pessoas
+Caso tenha o node.js você conseguirá visualizar com o comando npm start.

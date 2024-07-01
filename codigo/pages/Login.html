@@ -12,7 +12,7 @@
   <header>
     <div class="container">
       <div class="logo">
-          <img src="../assets/images/logo.png" alt="Logo" />
+          <a href="../index.html"><img src="../assets/images/logo.png" alt="Logo" /></a>
         </div>
         <div class="links">
           <ul>
@@ -92,19 +92,21 @@
           var userFound = false;
           var userType = null;
           var userId = null;
+          var userInfo = null;
           
-          
+          // Checking Doadores
           users.forEach(user => {
             console.log("Checking doador:", user);
             if (user.id === cpfCnpj && user.password === password) {
               userFound = true;
               userType = "Doadores";
-              userId = user.id; 
+              userId = user.id; //guardar id do usuario logado
+              userInfo = user;
               console.log("Found doador:", user);
             }
           });
 
-          
+          // Se usuário não for encontrado como doador, verificar receptores
           if (!userFound) {
             fetch(urlReceptores)
               .then(response => {
@@ -116,21 +118,23 @@
               .then(data => {
                 console.log("Data loaded from Receptores:", data);
 
-               
+                // Checking Receptores
                 data.forEach(user => {
                   console.log("Checking receptor:", user);
                   if (user.id === cpfCnpj && user.password === password) {
                     userFound = true;
                     userType = "Receptores";
-                    userId = user.id; 
+                    userId = user.id; // guardar id do usuario logado
+                    userInfo = user;
                     console.log("Found receptor:", user);
                   }
                 });
 
-               
+                // Redirecionar usuário se encontrado, caso contrário, exibir alerta
                 if (userFound) {
-                 
+                  //salvar id do usuario logado no localStorage
                   localStorage.setItem('userId', userId);
+                   localStorage.setItem('userInfo', JSON.stringify(userInfo));
                   if (userType === "Doadores") {
                     window.location.href = "PerfilUsuario.html";
                   } else if (userType === "Receptores") {
@@ -144,7 +148,14 @@
                 console.error('Erro ao buscar dados de Receptores:', error);
               });
           } else {
-            window.location.href = "PerfilUsuario.html";
+            //salvar id do usuario logado no localStorage
+            localStorage.setItem('userId', userId);
+            localStorage.setItem('userInfo', JSON.stringify(userInfo));
+            if (userType === "Doadores") {
+              window.location.href = "PerfilUsuario.html";
+            } else if (userType === "Receptores") {
+              window.location.href = "perfil_receptor.html";
+            }
           }
         })
         .catch(error => {
@@ -154,12 +165,4 @@
   </script>
 
 </body>
-   <footer>
-     
-     <div class="text-center p-2" style="background-color: #41b8fd;">
-       © 2024 Copyright:
-       <a style="color: #1d1d1d;bottom: 0px;" href="https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade">Fios de Bondade</a>
-     </div>
-    
-  </footer>
 </html>

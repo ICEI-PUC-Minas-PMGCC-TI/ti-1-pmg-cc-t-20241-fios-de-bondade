@@ -188,7 +188,211 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 O quadro kanban do grupo no Github está disponível através da URL https://github.com/orgs/ICEI-PUC-Minas-PMGCC-TI/projects/22.
 ![quadro_tarefas](https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade/assets/60720014/c08a1a5d-7f58-4253-b192-16cb12ebc96d)
 
+## Controle de Versão
+Repositório Git: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade.
+Branches:
+   - Master
+Commits:
+   Os commits foram realizados por sprints, da seguinte forma:
+      ● Sprint I - Documentação.
+      ● Sprint II - Primeira versão do código utilizando localstorage - Dividiu-se entre os membros da equipe os artefatos do sistema.
+      ● Sprint III - Segunda Versão do Código com a API do Json Server - As funcionalidades que faltavam foram implementadas e o sistema passou a utilizar o Json Server.
+      ● Sprint IV - Unificação dos Códigos - Os códigos dos integrantes foram unificados para o funcionamento integral do sistema.
 
+# Solução
+
+## Funcionalidades do Sistema
+- Página de Apresentação do “Fios de Bondade”
+O sistema de doação de roupas foi denominado “Fios de Bondade”. Na “Tela Principal” ou “Home”, consta a apresentação do sistema, com textos, cards e carrossel de imagens e informações sobre a proposta da plataforma, além de constituir sua identidade visual. No mais, há botões de “Login” e “Cadastro”, nessas funções o usuário pode logar ou cadastrar-se no sistema.
+    Instrução de Acesso:
+      ● Clique no botão de login na barra de navegação se for usuário cadastrado.
+      ● Clique no botão cadastrar-se não for cadastrado.
+  
+- Funcionalidade 1: Cadastro de Usuários
+   Caso o usuário queira se cadastrar no sistema, ele será redirecionado a página de cadastro, nela, o usuário deve preencher um formulário com suas informações para validar o seu cadastro ao sistema. Nesta página, ele determina o tipo de usuário que
+deseja ser no sistema: “Pessoa Física” ou “Pessoa Jurídica”.
+   Instruções de Acesso:
+      ● Escolha a opção de pessoa física ou jurídica.
+      ● Preencha o formulário com suas informações
+      ● Clique no botão “Cadastrar-se”.
+      ● Clique no botão de login na barra de navegação.
+  
+- Funcionalidade 2: Login de Usuários
+   Se o usuário já possuir um cadastro e queira apenas entrar no sistema, ele deverá informar seu “CPF” se for pessoa física ou “CNPJ” se for pessoa jurídica e “Senha” na tela de Login, para ter acesso à plataforma.
+  Instruções de Acesso:
+      ● Preencha com CPF se for pessoa física ou com CNPJ se for pessoa jurídica.
+      ● Clique no botão “Entrar”.
+  
+- Funcionalidade 3: Página de Perfil Doador
+   Quando fizer login, se o usuário for pessoa física ele será direcionado para sua página de perfil, onde consta suas informações, as quais ele pode atualizar, e o histórico de doações realizadas por ele.
+   Instruções de acesso:
+      ● Caso deseje editar seus dados clique em “Alterar dados”.
+      ● Caso deseje visualizar seu histórico de doações efetuadas, clique em “Histórico de Doações” e elas aparecerão na tela.
+  
+- Funcionalidade 4: Página de Perfil Receptor
+   Se o usuário for pessoa jurídica após o login, ele será direcionado para sua página de perfil, onde consta suas informações, as quais ele pode atualizar, suas solicitações de roupas, que ele pode ver, criar, editar ou deletar; seu histórico de doações recebidas, e os agendamentos das doações que ele terá que buscar.
+   Instruções de Acesso:
+      ● Caso deseje editar suas informações, selecione a informação que deseja, escreva a nova e clique no botão “Salvar”.
+      ● Caso deseje fazer uma solicitação de doação clique no ícone de “+”.
+      ● Caso deseje visualizar as solicitações clique no ícone ao lado do “+”.
+      ● Caso deseje visualizar seu histórico clique no botão “Mostrar Doações”.
+      ● Caso deseje desativar sua conta clique no botão “Desativar Conta”.
+  
+- Funcionalidade 5: Localizar Pontos de Coleta
+   Na “navbar” ao clicar em Pontos de Coleta, o usuário será direcionado para página dos pontos de coleta, onde ele vai visualizar um mapa com a localização de todas as instituições (pessoa jurídica) cadastradas, ele pode ainda inserir seu cep para ver a localização dos pontos de coleta próximos à sua casa ou trabalho, facilitando o processo de entrega da doação.
+   Instruções de Acesso:
+      ● Digite seu CEP e clique no botão “Buscar” para visualizar as instituições próximas de você.
+      ● Caso deseje efetuar uma doação, clique no botão “Quero Doar”.
+      ● Caso possua alguma dúvida, procure no FAQ, abaixo do botão de doação.
+  
+- Funcionalidade 6: Realizar Doações
+   Na “navbar” ao clicar em Doações ou no botão “Quero Doar” em Pontos de Coleta, o usuário será direcionado para página de doações, onde ele visualizará um formulário de informação das roupas que ele deseja doar.
+   Instruções de acesso:
+      ● Preencha o formulário com as informações das roupas que deseja doar.
+      ● Clique no botão “Concluir”, clique no botão “Confirmar” e pronto, é só levar no ponto de coleta mais próximo de você ou esperar que a instituição busque em sua casa.
+
+## Estrutura de Dados
+A estrutura de dados do projeto utiliza um modelo centralizado de armazenamento em formato JSON, organizado de forma hierárquica para eficiência e acesso rápido aos dados. Cada entidade no sistema é representada por objetos JSON que contém informações específicas, como usuários, doações e solicitações.
+
+- Estrutura de Dados: Usuários da aplicação
+   Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
+      "Doadores": [
+     {
+      "id": " ",
+      "nome": " ",
+      "endereco": {
+      "cep": " ",
+      "estado": " ",
+      "bairro": " ",
+      "rua": " ",
+      "cidade": " ",
+      "numero": " "
+      },
+      "email": " ",
+      "password": " ",
+      "telefone": " "
+      },
+      ],
+      "Receptores": [
+      {
+      "id": " ",
+      "nome": " ",
+      "endereco": {
+      "cep": " ",
+      "estado": " ",
+      "bairro": " ",
+      "rua": " ",
+      "cidade": " ",
+      "numero": " "
+      },
+      "email": " ",
+      "password": " ",
+      "telefone": " ",
+      "instituicao": " ",
+      "site": " "
+      }
+      ]
+  
+- Estrutura de Dados - Doações
+   Registro de doações enviadas e recebidas.
+      "Doacoes": [
+      {
+      "id": ,
+      "Doador": " ",
+      "Tipo": " ",
+      "Tamanho": " ",
+      "Quantidade": " ",
+      "Qualidade": " ",
+      "Genero": " ",
+      "Infantil": " ",
+      "Instituicao": " ",
+      "Vailevar": " ",
+      "Agendamento": [
+      {
+      "Data": " ",
+      "Hora": " ",
+      "Observações": " "
+      }
+      ]
+      }
+      ],
+      "doacoes_recebidas": [
+      {
+      "Tipo": " ",
+      "Tamanho": " ",
+      "Genero": " ",
+      "Quantidade": " ",
+      "Qualidade": " ",
+      "id": ,
+      "usuario_receptor": " ",
+      "usuario_id": " "
+      }
+      ]
+  
+- Estrutura de Dados - Solicitações
+   Registro de solicitações feitas pelo usuário receptor.
+      "solicitacoes": [
+      {
+      "tipo": " ",
+      "tamanho": " ",
+      "categoria": " ",
+      "f_etaria_id": ,
+      "usuario_id": " ",
+      "id":
+      }
+
+- Estrutura de Dados - Faixa Etária
+   Registro de Faixa Etária fixa utiliza nas solicitações
+      "f_etaria": [
+      {
+      "id": 1,
+      "descricao": "Recém Nascido"
+      },
+      {
+      "id": 2,
+      "descricao": "Bebês"
+      },
+      {
+      "id": 3,
+      "descricao": "Crianças"
+      },
+      {
+      "id": 4,
+      "descricao": "Adolescente"
+      },
+      {
+      "id": 5,
+      "descricao": "Adulto"
+      },
+      {
+      "id": 6,
+      "descricao": "Idoso"
+      }
+      ]
+
+## Módulos e APIs
+Esta seção apresenta os módulos e APIs utilizados na solução.
+
+   Imagens:
+      ● Flaticon - https://www.flaticon.com/br/
+      
+   Fonts:
+      ● Icons Font Face - https://fontawesome.com/
+      
+   Scripts:
+      ● jQuery - https://code.jquery.com/jquery-3.7.1.min.js
+      ● JavaScript
+      
+   Frameworks:
+      ● Bootstrap 4 - http://getbootstrap.com
+      
+   Linguagens de Marcação e Estilização:
+      ● HTML5
+      ● CSS
+      
+   API:
+      ● Json Server
+      
 **Referências Bibliográficas**:
 
 - [Organização das Nações Unidas (ONU). ONU pede a consumidores de moda mais reflexão antes de comprar](https://news.un.org/pt/story/2022/10/1804067))

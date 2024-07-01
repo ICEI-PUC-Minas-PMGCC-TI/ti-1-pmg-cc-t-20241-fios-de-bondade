@@ -16,4 +16,6 @@ Este projeto tem como objetivo principal facilitar o processo de doação de rou
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+- Primeiramente, baixar a pasta código desse github.
+- Para configurar o JSON server entre no link do replit: https://replit.com/@matheusgrecodal/Json-TI-Fios-de-Bondade-1, depois faça um Fork do projeto e clique em Run para visualizar a página.
+- Ou, caso preferir no terminal do vs code ao abrir o projeto, digite "npm install", e após a instalação digite "npm start" para iniciar o json server por meio do node js, depois é só colar a url local no navegador para visualizar o site.

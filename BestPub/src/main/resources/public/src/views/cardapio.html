@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento do Cardápio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .image-preview-container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #6c757d;
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .image-preview-container:hover {
+            border-color: #007bff;
+            background-color: #e9ecef;
+        }
+
+        .image-preview-container img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+
+        .image-preview-container span {
+            font-size: 16px;
+            color: #6c757d;
+            text-align: center;
+        }
+
+        .image-preview-container:hover span {
+            color: #007bff;
+        }
+
+        .btn-upload {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-between text-color align-items-center p-3 background-modal">
+        <a href="home.html">
+            <img src="../assets/logo.png" draggable="false" alt="Logo" class="img-fluid" style="height: 50px;">
+        </a>
+        <div class="d-none d-md-flex align-items-center">
+            <p class="mb-0 me-3" id="user-name"></p>
+            <img draggable="false" src="../assets/person_1.png" class="rounded-circle" style="height: 40px;">
+        </div>
+        <div class="d-md-none">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 30 30">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <h1 class="text-center">Gerenciamento do Cardápio</h1>
+
+        <!-- Formulário para Adicionar Produto ou Bebida -->
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5>Adicionar Produto ou Bebida</h5>
+            </div>
+            <div class="card-body">
+                <form id="cardapioForm">
+                    <div class="mb-3">
+                        <label for="nomeProduto" class="form-label">Nome do Produto/Bebida</label>
+                        <input type="text" class="form-control" id="nomeProduto" placeholder="Digite o nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipoProduto" class="form-label">Tipo</label>
+                        <select class="form-select" id="tipoProduto" onchange="verificarTipo()">
+                            <option value="Produto">Produto</option>
+                            <option value="Bebida">Bebida</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 d-none" id="alcoolicoContainer">
+                        <label for="alcoolico" class="form-label">É Alcoólica?</label>
+                        <select class="form-select" id="alcoolico">
+                            <option value="Sim">Sim</option>
+                            <option value="Nao">Não</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="precoProduto" class="form-label">Preço</label>
+                        <input type="number" class="form-control" id="precoProduto" placeholder="Digite o preço">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descricaoProduto" class="form-label">Descrição</label>
+                        <textarea class="form-control" id="descricaoProduto" rows="3"
+                            placeholder="Digite a descrição do produto"></textarea>
+                    </div>
+                    <!-- Upload de Imagem -->
+                    <div class="mb-3">
+                        <label for="imagemProduto" class="form-label">Imagem do Produto/Bebida</label>
+                        <div class="image-preview-container" onclick="document.getElementById('imagemProduto').click()">
+                            <img id="previewImagem" alt="Prévia da Imagem">
+                            <span id="previewTexto">Clique ou arraste uma imagem aqui</span>
+                        </div>
+                        <input type="file" id="imagemProduto" class="form-control d-none" accept="image/*"
+                            onchange="carregarImagem(event)">
+                    </div>
+                    <button type="button" class="btn btn-primary w-100" onclick="adicionarAoCardapio()">Adicionar ao
+                        Cardápio</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tabela do Cardápio -->
+        <div class="mt-5">
+            <h3>Itens no Cardápio</h3>
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Preço</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="cardapioTabela">
+                    <!-- Os itens adicionados aparecerão aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function verificarTipo() {
+            const tipo = document.getElementById("tipoProduto").value;
+            const alcoolicoContainer = document.getElementById("alcoolicoContainer");
+            if (tipo === "Bebida") {
+                alcoolicoContainer.classList.remove("d-none");
+            } else {
+                alcoolicoContainer.classList.add("d-none");
+            }
+        }
+
+        let file;
+
+        function carregarImagem(event) {
+            const previewImagem = document.getElementById("previewImagem");
+            const previewTexto = document.getElementById("previewTexto");
+            file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    previewImagem.src = e.target.result;
+                    previewImagem.style.display = "block";
+                    previewTexto.style.display = "none";
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        async function adicionarAoCardapio() {
+            const nome = document.getElementById("nomeProduto").value;
+            const tipo = document.getElementById("tipoProduto").value;
+            const preco = document.getElementById("precoProduto").value;
+            const descricao = document.getElementById("descricaoProduto").value;
+            const alcoolico = tipo === "Bebida" ? document.getElementById("alcoolico").value : "-";
+
+
+            if (!nome || !tipo || !preco || !file) {
+                alert("Por favor, preencha todos os campos obrigatórios!");
+                return;
+            }
+
+
+            
+            const imagemSrc = await uploadImagemImgbb(file);
+            //const imagemSrc="https://i.ibb.co/rdSJhvZ/ae2ac62915d7.png";
+            console.log(imagemSrc);
+
+
+            // Cria o objeto baseado no tipo (Produto ou Bebida)
+            let objetoCriado;
+
+            // Verifica o tipo selecionado e cria o objeto correspondente
+            if (tipo === "Produto") {
+                objetoCriado = {
+                    nome: nome,
+                    preco: preco,
+                    descricao: descricao,
+                    imagem: imagemSrc // URL ou base64 da imagem
+                };
+
+                // Faz a requisição para criar um produto
+                fetch('/inserir/produto', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(objetoCriado)
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Produto enviado com sucesso!');
+                        } else {
+                            alert('Erro ao enviar o produto!');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erro ao enviar o produto:', error);
+                    });
+
+            } else if (tipo === "Bebida") {
+                objetoCriado = {
+                    nome: nome,
+                    preco: preco,
+                    descricao: descricao,
+                    alcoolico: alcoolico,
+                    imagem: imagemSrc // URL ou base64 da imagem
+                };
+
+                // Faz a requisição para criar uma bebida
+                fetch('/inserir/bebida', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(objetoCriado)
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Bebida enviada com sucesso!');
+
+                        } else {
+                            alert('Erro ao enviar a bebida!');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erro ao enviar a bebida:', error);
+                    });
+
+            } else {
+                alert("Tipo inválido selecionado!");
+                return;
+            }
+
+            // Exibe o objeto criado no console para validação
+            console.log(objetoCriado);
+
+
+
+
+            const tabela = document.getElementById("cardapioTabela");
+            const novaLinha = `
+                <tr>
+                    <td><img src="${imagemSrc}" alt="${nome}" style="max-height: 50px;"></td>
+                    <td>${nome}</td>
+                    <td>${tipo} ${tipo === "Bebida" ? `(${alcoolico})` : ""}</td>
+                    <td>R$ ${parseFloat(preco).toFixed(2)}</td>
+                    <td>${descricao}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="removerItem(this)">Remover</button>
+                    </td>
+                </tr>
+            `;
+            tabela.insertAdjacentHTML("beforeend", novaLinha);
+            document.getElementById("cardapioForm").reset();
+            verificarTipo();
+            document.getElementById("previewImagem").style.display = "none";
+            document.getElementById("previewTexto").style.display = "block";
+        }
+
+        function removerItem(botao) {
+            botao.closest("tr").remove();
+        }
+
+        // Função para enviar imagem para a API Imgbb
+        async function uploadImagemImgbb(file) {
+            const apiKey = "11aad652673d4d6bd125b34677924c9b"; // Substitua pela sua chave da API Imgbb
+
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = async function (e) {
+                    const base64Image = e.target.result.split(',')[1]; // Remove o prefixo da base64
+
+                    const formData = new FormData();
+                    formData.append('image', base64Image);
+
+                    try {
+                        const response = await fetch(`https://api.imgbb.com/1/upload?key=${apiKey}`, {
+                            method: "POST",
+                            body: formData
+                        });
+                        const data = await response.json();
+                        if (data.success) {
+                            resolve(data.data.url); // Retorna a URL da imagem se sucesso
+                        } else {
+                            reject("Erro ao enviar imagem: " + data.error.message);
+                        }
+                    } catch (error) {
+                        reject("Erro na requisição de upload: " + error);
+                    }
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+        function carregarProdutos() {
+            fetch('/listar/produtos')
+                .then(response => response.json())
+                .then(data => {
+                    const tabela = document.getElementById("cardapioTabela");
+                    console.log(data);
+                    data.forEach(item => {
+                        item.tipo = "Produto";
+                        const novaLinha = `
+                <tr>
+                    <td><img src="${item.imagem}" alt="${item.nome}" style="max-height: 50px;"></td>
+                    <td>${item.nome}</td>
+                    <td>${item.tipo} ${item.tipo === "Bebida" ? `(${item.alcolica})` : ""}</td>
+                    <td>R$ ${parseFloat(item.preco).toFixed(2)}</td>
+                    <td>${item.descricao}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="removerItem(this)">Remover</button>
+                    </td>
+                </tr>
+                `;
+                        tabela.insertAdjacentHTML("beforeend", novaLinha);
+                        document.getElementById("cardapioForm").reset();
+                        verificarTipo();
+                        document.getElementById("previewImagem").style.display = "none";
+                        document.getElementById("previewTexto").style.display = "block";
+                    });
+                })
+                .catch(error => console.error('Erro:', error));
+        }
+
+        function carregarBebidas() {
+            fetch('/listar/bebidas')
+                .then(response => response.json())
+                .then(data => {
+                    const tabela = document.getElementById("cardapioTabela");
+                    console.log(data);
+                    data.forEach(item => {
+                        item.tipo = "Bebida";
+                        const novaLinha = `
+                    <tr>
+                    <td><img src="${item.imagem}" alt="${item.nome}" style="max-height: 50px;"></td>
+                    <td>${item.nome}</td>
+                   <td>${item.tipo} ${item.tipo === "Bebida" ? `(${item.alcolica ? 'Alcoólico' : 'Não Alcoólico'})` : ""}</td>
+                    <td>R$ ${parseFloat(item.preco).toFixed(2)}</td>
+                    <td>${item.descricao}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" onclick="removerItem(this)">Remover</button>
+                    </td>
+                </tr>
+                `;
+                        tabela.insertAdjacentHTML("beforeend", novaLinha);
+                        document.getElementById("cardapioForm").reset();
+                        verificarTipo();
+                        document.getElementById("previewImagem").style.display = "none";
+                        document.getElementById("previewTexto").style.display = "block";
+                    });
+                })
+                .catch(error => console.error('Erro:', error));
+        }
+        // Chamar as funções ao carregar a página
+        window.onload = function () {
+            carregarProdutos();
+            carregarBebidas();
+        };
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

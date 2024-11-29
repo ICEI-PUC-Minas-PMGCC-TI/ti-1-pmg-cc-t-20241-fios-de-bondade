@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestPub - Detalhes do Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css" />
+</head>
+
+<body>
+    <header class="d-flex justify-content-between text-color align-items-center p-3 background-modal">
+        <a href="home.html">
+            <img src="../assets/logo.png" draggable="false" alt="Logo" class="img-fluid" style="height: 50px;">
+        </a>
+        <div class="d-none d-md-flex align-items-center">
+            <p class="mb-0 me-3" id="user-name"></p>
+            <img draggable="false" src="../assets/person_1.png" class="rounded-circle" style="height: 40px;">
+        </div>
+        <div class="d-md-none">
+            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 30 30">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="collapse">
+        <nav class="bg-light p-2">
+            <a href="home.html" class="text-dark">Início</a>
+        </nav>
+    </div>
+
+    <nav class="d-none d-md-block bg-light p-2">
+        <a href="home.html" class="text-dark">Início</a>
+    </nav>
+
+    <main>
+        <div class="text-center mt-4">
+            <h1>Bem vindo ao <span id="bar-name" class="background-modal text-color"
+                    style="padding: .1em; border-radius: 10px;">*Nome do bar*</span></h1>
+        </div>
+        <div class="container">
+            <div class="mt-4">
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <img id="bar-imagem" src="../assets/default-bar.png" alt="Imagem do Bar"
+                        class="img-fluid shadow-lg rounded" style="max-width: 80%; border: 5px solid #DC9CB8;">
+                </div>
+            </div>
+
+            <h2 class="background-modal text-color mt-4">Descrição</h2>
+            <span id="bar-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu condimentum urna, et vulputate felis.
+                Quisque porta malesuada ante. Donec ornare mauris nec fringilla feugiat. Aliquam vel elementum nibh, sit
+                amet placerat ligula. Aliquam tincidunt vitae ante quis faucibus. Curabitur condimentum arcu ut sem
+                pulvinar, quis efficitur elit porttitor. Curabitur commodo mi ut gravida lobortis. Etiam pharetra quis
+                erat et blandit. Phasellus finibus, ipsum ut feugiat maximus, leo erat facilisis mi, nec malesuada magna
+                urna et orci. Praesent in risus et elit blandit luctus.
+            </span>
+            <p class="mt-4"><span style="font-weight: bold">Telefone de contato:</span> <span id="bar-telefone">(00)
+                    000000000</span></p>
+            <p class="mt-4"><span style="font-weight: bold">Endereço:</span> <span id="bar-address">(00)
+                    000000000</span></p>
+
+            <!-- Tabela do Cardápio -->
+            <div class="mt-5">
+                <h3>Itens no Cardápio</h3>
+                <table class="table table-striped">
+                    <thead class="table background-modal">
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Nome</th>
+                            <th>Tipo</th>
+                            <th>Preço</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cardapioTabela">
+                        <!-- Os itens adicionados aparecerão aqui -->
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="mt-4">Comentários:</h2>
+
+            <div id="comment-section">
+
+                <form id="comment-form">
+                    <div class="input-group mb-3">
+                        <textarea type="text" class="form-control texte-black input-comentario"
+                            placeholder="Digite Seu Comentário" aria-label="Recipient's username"
+                            aria-describedby="button-addon2"></textarea>
+                        <button class="btn btn-outline-secondary d-block" type="button"
+                            id="button-addon2">Enviar</button>
+                    </div>
+                </form>
+
+                <div id="comment-list">
+                    <!-- Comentários serão renderizados aqui -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="d-flex p-3 justify-content-center mt-5 text-color background-modal"
+        style="border-top: 5px solid #DC9CB8;">
+        <p>&copy; Copyright - BestPub 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/account.js"></script>
+
+    <script>
+        // Função para carregar detalhes do bar
+        document.addEventListener('DOMContentLoaded', () => {
+            const selectedBar = JSON.parse(localStorage.getItem('selectedBar')); // Recupera os dados do bar
+
+            if (selectedBar) {
+                document.getElementById('bar-name').textContent = selectedBar.nome;
+                document.getElementById('bar-telefone').textContent = selectedBar.telefone;
+                document.getElementById('bar-description').textContent = selectedBar.descricao;
+                document.getElementById('bar-address').textContent = `${selectedBar.enderecoLogradouro}, ${selectedBar.enderecoCidade} - ${selectedBar.enderecoEstado}`;
+            } else {
+                console.error('Nenhum bar foi selecionado.');
+            }
+
+            document.getElementById('button-addon2').addEventListener('click', function () {
+                var comentarioText = document.querySelector('.input-comentario').value;
+                const json = {
+                    texto: comentarioText
+                };
+                const data = JSON.stringify(json);
+
+                if (comentarioText) {
+                    // Fazendo a requisição para o backend (simulação com fetch)
+                    fetch('/inserir/comentario', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: data
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            // Limpar o campo de comentário após enviar
+                            document.querySelector('.input-comentario').value = '';
+                            carregarComentarios();  // Recarregar a lista de comentários
+                        })
+                        .catch(error => console.error('Erro ao enviar comentário:', error));
+                }
+            });
+
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const selectedBar = JSON.parse(localStorage.getItem('selectedBar')); // Recupera os dados do bar
+
+            if (selectedBar) {
+                const barImageElement = document.getElementById('bar-imagem');
+                if (selectedBar.imagem && selectedBar.imagem.trim() !== "") {
+                    barImageElement.src = selectedBar.imagem; // Define a imagem do bar
+                } else {
+                    barImageElement.src = '../assets/default-bar.png'; // Imagem padrão
+                }
+            } else {
+                console.error('Nenhum bar foi selecionado.');
+            }
+        });
+
+
+        function carregarComentarios() {
+            // Obtém o CNPJ do localStorage
+            const selectedBar = JSON.parse(localStorage.getItem('selectedBar'));
+            // Obtém o CNPJ do localStorage
+            const cnpjBar = selectedBar.cnpj;
+
+            if (!cnpjBar) {
+                console.error('CNPJ do bar não encontrado no localStorage.');
+                alert('Erro: CNPJ do bar não definido. Por favor, selecione um bar.');
+                return;
+            }
+
+            // Fazendo a requisição POST para o backend com o CNPJ no corpo
+            fetch('/comentarios', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ cnpj_bar: cnpjBar }) // Envia o CNPJ no corpo da requisição
+            })
+                .then(response => response.json())
+                .then(comentarios => {
+                    const commentList = document.querySelector('#comment-list');
+                    commentList.innerHTML = ''; // Limpar o conteúdo atual
+
+                    if (!comentarios || comentarios.length === 0) {
+                        const noComments = document.createElement('p');
+                        noComments.textContent = 'Nenhum comentário disponível.';
+                        commentList.appendChild(noComments);
+                        return;
+                    }
+
+                    // Renderizar os comentários
+                    comentarios.forEach(comentario => {
+                        const comentarioElement = document.createElement('div');
+                        comentarioElement.classList.add('comentario');
+
+                        // Extraindo informações relevantes
+                        const [id, texto, data, numero1, numero2] = comentario.comentario
+                            .replace(/[()]/g, '') // Remove parênteses
+                            .split(','); // Divide em partes
+
+                        comentarioElement.innerHTML = `
+                        <strong>${comentario.usuario || 'Anônimo'}:</strong> 
+                        <p>${texto.trim() || 'Sem conteúdo'}</p>
+                        <small>Data: ${data.trim() || 'Data não informada'}</small>
+                    `;
+
+                        commentList.appendChild(comentarioElement);
+                    });
+
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar os comentários:', error);
+                    const commentList = document.querySelector('#comment-list');
+                    commentList.innerHTML = '<p>Erro ao carregar os comentários. Tente novamente mais tarde.</p>';
+                });
+        }
+
+
+
+        function carregarProdutos() {
+            const selectedBar = JSON.parse(localStorage.getItem('selectedBar'));
+            const cnpjBar = selectedBar.cnpj;
+            fetch('/listar/produtos',{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ cnpj_bar: cnpjBar }) // Envia o CNPJ no corpo da requisição
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const tabela = document.getElementById("cardapioTabela");
+                    console.log(data);
+                    data.forEach(item => {
+                        item.tipo = "Produto";
+                        const novaLinha = `
+        <tr>
+            <td><img src="${item.imagem}" alt="${item.nome}" style="max-height: 50px;"></td>
+            <td>${item.nome}</td>
+            <td>${item.tipo} ${item.tipo === "Bebida" ? `(${item.alcolica})` : ""}</td>
+            <td>R$ ${parseFloat(item.preco).toFixed(2)}</td>
+            <td>${item.descricao}</td>
+        </tr>
+        `;
+                        tabela.insertAdjacentHTML("beforeend", novaLinha);
+                    });
+                })
+                .catch(error => console.error('Erro:', error));
+        }
+
+        function carregarBebidas() {
+            const selectedBar = JSON.parse(localStorage.getItem('selectedBar'));
+            const cnpjBar = selectedBar.cnpj;
+            fetch('/listar/bebidas', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ cnpj_bar: cnpjBar }) // Envia o CNPJ no corpo da requisição
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    const tabela = document.getElementById("cardapioTabela");
+                    console.log(data);
+                    data.forEach(item => {
+                        item.tipo = "Bebida";
+                        const novaLinha = `
+            <tr>
+            <td><img src="${item.imagem}" alt="${item.nome}" style="max-height: 50px;"></td>
+            <td>${item.nome}</td>
+           <td>${item.tipo} ${item.tipo === "Bebida" ? `(${item.alcolica ? 'Alcoólico' : 'Não Alcoólico'})` : ""}</td>
+            <td>R$ ${parseFloat(item.preco).toFixed(2)}</td>
+            <td>${item.descricao}</td>
+            
+        </tr>
+        `;
+                        tabela.insertAdjacentHTML("beforeend", novaLinha);
+                    });
+                })
+                .catch(error => console.error('Erro:', error));
+        }
+        // Chamar as funções ao carregar a página
+        window.onload = function () {
+            carregarProdutos();
+            carregarBebidas();
+        };
+        // Chama a função para renderizar os comentários assim que a página for carregada
+        document.addEventListener("DOMContentLoaded", carregarComentarios);
+    </script>
+</body>
+
+</html>

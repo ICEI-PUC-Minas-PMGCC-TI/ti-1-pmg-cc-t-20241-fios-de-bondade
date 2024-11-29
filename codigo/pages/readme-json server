@@ -1,8 +1,0 @@
-Para visualização das páginas é necessário acessar o replit devido ao uso do Json server,
-para isso você deve:
-
-1 - Acessar o link do projeto-> https://replit.com/@matheusgrecodal/Json-TI-Fios-de-Bondade-1
-2 - Realizar o "fork" do repositório.
-3-  Após carregar é só da "Run" para visualizar a página de perfil.
-
-Caso tenha o node.js você conseguirá visualizar com o comando npm start.

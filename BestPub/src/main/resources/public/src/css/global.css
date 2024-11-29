@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sizes (Tamanhos) */
+.w-med {
+    width: 40vw;
+}
+
+/* Componentes estilizados */
+.global-button {
+    padding: .8em 3em;
+    border: 0;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    /* Oculto por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo escurecido */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bar-imagem {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#bar-imagem:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Cores e backgrounds */
+.background {
+    background-color: #ece2d4;
+}
+
+.background-modal {
+    background-color: #AD3C6E;
+}
+
+.text-color {
+    color: #ffffff;
+}
+
+.input-color {
+    color: #000000;
+}
+
+.link-color {
+    color: #ffffff;
+}
+
+.link-color:hover {
+    color: #DC9CB8;
+}
+
+.background-button-2 {
+    color: #FFFFFF;
+    background-color: #AD3C6E;
+    border: 2px solid #AD3C6E;
+}
+
+.background-button-2:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.background-button {
+    background-color: #FFFFFF;
+}
+
+.background-button:hover {
+    background-color: #DC9CB8;
+    color: #FFFFFF;
+}
+
+.input-comentario {
+    border: none;
+    border-bottom: 3px solid #AD3C6E;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+.picture__input{
+    display: none;
+}
+.picture{
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #aaa;
+    color: #aaa;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out;
+    transition: border 300ms ease-in-out;
+}
+.picture:hover{
+    color: #AD3C6E;
+    border:2px dashed #AD3C6E;
+}
+.picture__img {
+    max-width: 100%;
+=======
+=======
+>>>>>>> 1336058f9cf56db6775b775d1de34e54a064d63b
+.float-button {
+    position: fixed;
+    background-color: #AD3C6E;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+<<<<<<< HEAD
+>>>>>>> 1336058 (API OpenAIChat)
+=======
+>>>>>>> 1336058f9cf56db6775b775d1de34e54a064d63b
+  }

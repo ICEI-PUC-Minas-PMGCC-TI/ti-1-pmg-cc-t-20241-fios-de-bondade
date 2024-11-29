@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestPub - Cadastro de Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/registrobar.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="d-flex justify-content-between align-items-center p-3 primary-color text-white">
+        <a href="home.html" class="text-white">
+            <img src="../assets/logo.png" alt="Logo" id="logo" class="img-fluid" draggable="false"
+                style="width: 200px; height: 50px;">
+        </a>
+        <div class="d-flex align-items-center">
+            <p class="mb-0 me-3" id="user-name"></p>
+            <img src="../assets/person_1.png" alt="User" class="rounded-circle" width="36" height="36">
+        </div>
+        <div class="d-md-none">
+            <button class="btn btn-outline-light" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    </div>
+    <!-- Main Container -->
+    <div class="container mt-5">
+        <h1 class="text-color p-2 mb-4 background-modal" style="border-radius: 10px;">Registre seu bar</h1>
+        <form>
+            <!-- Input Fields -->
+            <div class="row mb-3">
+                <div class="containerinput col-md-6">
+                    <label for="nomeBar" class="form-label">Nome do bar</label>
+                    <input type="text" class="form-control" id="nomeBar" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="cnpj" class="form-label">CNPJ</label>
+                    <input type="text" class="form-control" id="cnpj" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="faixaEtaria" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+            </div>
+            <!-- Novo bloco para CEP, Número, Cidade, Estado e Bairro -->
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="numero" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="cidade" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="estado" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="estado" required>
+                </div>
+            </div>
+
+
+
+            <!-- Dropdown Fields -->
+            <div class="mb-3">
+                <label for="estiloBar" class="form-label">Estilo do bar</label>
+                <select class="form-select" id="estiloBar">
+                    <option>Pub clássico</option>
+                    <option>Temático</option>
+                    <option>Moderno</option>
+                    <option>Retrô</option>
+                    <option>Casual</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="atividadesBar" class="form-label">Atividades do bar</label>
+                <select class="form-select" id="atividadesBar">
+                    <option>Música ao vivo</option>
+                    <option>Espaço kids</option>
+                    <option>Jogos de tabuleiro</option>
+                    <option>Fliperama</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="faixaPreco" class="form-label">Faixa de Preço</label>
+                <select class="form-select" id="faixaPreco">
+                    <option>Alta</option>
+                    <option>Intermediária</option>
+                    <option>Baixa</option>
+                </select>
+            </div>
+
+            <!-- Description Field -->
+            <div class="mb-3">
+                <label for="descricaoBar" class="form-label">Descrição do bar</label>
+                <textarea class="form-control" id="descricaoBar" rows="4"
+                    placeholder="Crie uma descrição para o seu bar aqui..."></textarea>
+            </div>
+
+            <!-- Profile Picture -->
+
+
+            <div class="d-flex justify-content-center align-items-center mb-4" style="border: 4px dashed gray; height: 400px;">
+                <div class="w-100 h-100 d-flex justify-content-center align-items-center gap-4">
+                    <!-- Exibe a imagem selecionada com estilo responsivo -->
+                    <img id="preview" src="" alt="Pré-visualização da imagem" class="img-fluid rounded" style="height: 100%;  display: none;">
+                    
+                    <!-- Botão para selecionar imagem -->
+                    <label for="file" class="btn btn-primary primary-color mt-3">Selecionar foto</label>
+                    <input type="file" id="file" accept="image/jpeg, image/png, image/jpg" class="d-none">
+                </div>
+            </div>
+            
+
+
+            <!-- Buttons -->
+            <div class="d-flex justify-content-around">
+                <button type="submit" class="global-button background-button-2" id="registerBtn">Editar</button>
+                <button type="button" class="global-button background-button-2">Excluir bar</button>
+            </div>
+        </form>
+
+        <!-- Botão flutuante para abrir o modal do CRUD -->
+        <a href="#" class="btn btn-primary btn-lg rounded-circle float-button" id="btn-cardapio" data-bs-toggle="modal"
+            data-bs-target="#crudModal">
+            <i class="bi bi-plus-lg">Cardapio</i>
+        </a>
+
+        <!-- Modal-->
+
+
+        <!-- Modal para o CRUD do Cardápio -->
+        <div class="modal fade" id="crudModal" tabindex="-1" aria-labelledby="crudModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="crudModalLabel">Adicionar Bebida ou Produto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="cardapioForm">
+                            <div class="mb-3">
+                                <label for="nomeProduto" class="form-label">Nome do Produto/Bebida</label>
+                                <input type="text" class="form-control" id="nomeProduto" placeholder="Digite o nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipoProduto" class="form-label">Tipo</label>
+                                <select class="form-select" id="tipoProduto">
+                                    <option value="Produto" id="produto">Produto</option>
+                                    <option value="Bebida" id="bebida">Bebida</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 d-none" id="alcolotra">
+                                <label for="tipoProduto" class="form-label">Alcolica</label>
+                                <select class="form-select" id="tipoProduto">
+                                    <option value="Bebida">Sim</option>
+                                    <option value="Produto">Nao</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="precoProduto" class="form-label">Preço</label>
+                                <input type="number" class="form-control" id="precoProduto"
+                                    placeholder="Digite o preço">
+                            </div>
+                            <div class="mb-3">
+                                <label for="descricaoProduto" class="form-label">Descrição</label>
+                                <textarea class="form-control" id="descricaoProduto" rows="3"
+                                    placeholder="Digite a descrição do produto"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" class="btn" id="adicionarItem">Adicionar ao Cardápio</button>
+                    <!-- Tabela do Cardápio -->
+                    <div class="container mt-5">
+                        <h2>Itens no Cardápio</h2>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Tipo</th>
+                                    <th>Preço</th>
+                                    <th>Descrição</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cardapioTabela">
+                                <!-- Os itens adicionados aparecerão aqui -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="d-flex p-3 justify-content-center mt-5 text-color background-modal"
+            style="border-top: 5px solid #DC9CB8;">
+            <p>&copy; Copyright - BestPub 2024</p>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="../js/registrobar.js"></script>
+        <!-- Bootstrap JS + Popper.js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Ícones Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+
+<script>
+    const apiKey = "YOUR_CLIENT_API_KEY"; // Substitua pela sua chave de API do Imgbb
+    
+    // Função para exibir a pré-visualização da imagem
+    document.getElementById("file").addEventListener("change", function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const preview = document.getElementById("preview");
+                preview.src = e.target.result;
+                preview.style.display = "block"; // Exibe a imagem
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+    
+    // Função para converter a imagem em base64 e enviar para a API Imgbb
+    document.getElementById("uploadBtn").addEventListener("click", function() {
+        const fileInput = document.getElementById("file");
+        const file = fileInput.files[0];
+        
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const base64Image = e.target.result.split(',')[1]; // Remove o prefixo da base64
+                
+                // Enviar a imagem para a API
+                fetch(`https://api.imgbb.com/1/upload?key=${apiKey}`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        image: base64Image
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        console.log("Imagem enviada com sucesso:", data.data.url);
+                    } else {
+                        console.error("Erro ao enviar imagem:", data.error);
+                    }
+                })
+                .catch(error => console.error("Erro na requisição:", error));
+            };
+            reader.readAsDataURL(file);
+        } else {
+            alert("Por favor, selecione uma imagem primeiro.");
+        }
+    });
+    </script>
+
+        
+        <!-- Bootstrap JS -->
+        <script src="../js/foto_registro.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+        <script src="../js/registrobar.js"></script>
+</body>
+
+</html>

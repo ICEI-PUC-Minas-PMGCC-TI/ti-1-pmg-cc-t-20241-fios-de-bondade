@@ -1,31 +1,31 @@
-<<<<<<< HEAD
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: Sistema de Doação de Roupas - Fios de Bondade
+title: 
 authors:
-  - family-names: Ribeiro Bagattini
-    given-names: Apolo
-  - family-names: Henrique Ferreira Costa
-    given-names: Luis
-  - family-names: Greco Morais Dall'Alba
-    given-names: Matheus
-  - family-names: Mell de Souza Silva
-    given-names: Rayssa
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names: 
+  - family-names: 
+    given-names:
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: Nepomuceno Curto
-    given-names: Hayala
+    family-names: 
+    given-names: 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: Alberto Marques Pietrobon
-    given-names: Carlos
+    family-names: 
+    given-names: 
 keywords:
-  - Doação
-  - Roupas
-  - Instituições
-repository-code: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-t-20241-fios-de-bondade
+  - 
+  - 
+repository-code: 
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2024-06-30
-=======
->>>>>>> 576e4073eb686b7caee5801aac8f95491eb4d605
+date-released: 2022-07-14

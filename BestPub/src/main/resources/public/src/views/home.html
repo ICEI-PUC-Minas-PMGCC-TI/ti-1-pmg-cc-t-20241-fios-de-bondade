@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../js/home.js"></script>
+    <title>BestPub</title>
+</head>
+
+<body onload="GenerateItems()">
+    <div id="div-modal-filter" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Filtrar</h5>
+                    <button type="button" class="close" onclick="modalFilterAparrence()" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="div-modal-container" action="javascript:filterSubmit()">
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="select-modal-zone">Região</label>
+                                <select id="select-modal-zone" class="form-control select-modal"></select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="select-modal-order">Tipo de ordenação</label>
+                                <select id="select-modal-order" class="form-control select-modal"></select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="select-modal-mediavalue">Valor médio</label>
+                                <select id="select-modal-mediavalue" class="form-control select-modal"></select>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="select-modal-typefood">Estilo do bar</label>
+                                <select id="select-modal-typefood" class="form-control select-modal"></select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="select-modal-typelocal">Atividades</label>
+                                <select id="select-modal-typelocal" class="form-control select-modal"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="button-modal-filter" type="submit" class="btn btn-primary">Filtrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="div-modal-user" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adicionar Bares</h5>
+                    <button type="button" class="close" onclick="modalUserAparrence()" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="div-modal-container-user" class="modal-body">
+                    <a href="registrobar.html" id="a-modal-user">Adicionar Bares</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <a id="div-logo" href="home.html">
+            <img src="../assets/logo.png" alt="Logo" id="logo" style="width: 200px; height: 50px;">
+        </a>
+        <div id="div-user">
+            <p id="user-name">Marcos Ani Cury Vinagre Silva</p>
+            <img id="img-user" src="../assets/person_1.png" class="img-fluid" alt="Usuário">
+        </div>
+        <script> document.getElementById("user-name").addEventListener("click", function () { window.location.href = "./account.html"; }); document.getElementById("img-user").addEventListener("click", function () { window.location.href = "./account.html"; }); </script>
+        <div id="div-mobile-user" onclick="modalUserAparrence()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div id="div-carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#div-carousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#div-carousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#div-carousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/carrousel/bar1.jpeg" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/carrousel/bar2.jpeg" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/carrousel/bar3.jpeg" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#div-carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#div-carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </a>
+        </div>
+
+        <div id="div-filter" class="d-flex justify-content-between align-items-center my-3">
+            <input id="input-filter-name-bar" type="text" class="form-control" placeholder="Digite o nome do bar" />
+            <button id="button-search" type="button" class="btn btn-outline-secondary" onclick="filterByName()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+            <!-- Botão que abre o modal -->
+            <button id="button-filter" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                data-bs-target="#filterModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                    class="bi bi-funnel-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2z" />
+                </svg>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Cabeçalho -->
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="filterModalLabel">Enviar Imagem</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- Corpo -->
+                        <div class="modal-body">
+                            <p>Envie uma imagem do produto ou bebida. Nós encontraremos bares que combinam com sua
+                                escolha!</p>
+                            <form id="uploadForm">
+                                <div class="mb-3">
+                                    <label for="fileInput" class="form-label">Escolha uma imagem</label>
+                                    <input type="file" class="form-control" id="fileInput" accept="image/*" required>
+                                </div>
+                                <!-- Rodapé -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" onclick="GenerateItemsImg()" form="uploadForm" class="btn btn-primary">Enviar</button>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="div-filter" class="d-flex justify-content-between align-items-center my-3">
+            <!-- Seu código de filtro aqui -->
+        </div>
+
+        <div class="container-fluid mt-4">
+            <div class="row" id="bar-list">
+                <!-- Os bares serão inseridos dinamicamente aqui -->
+            </div>
+        </div>
+        <p class="aviso-bares">(Nenhum bar encontrado)</p>
+    </main>
+
+    "
+    <script>
+        
+
+    </script>
+</body>
+
+</html>

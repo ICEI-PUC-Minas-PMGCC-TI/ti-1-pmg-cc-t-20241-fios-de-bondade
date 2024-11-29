@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestPub - Recuperação de senha</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css" />
+</head>
+
+<body class="vh-100 text-color">
+    <form id="loginForm" class="d-flex items-center justify-content-center" style="margin-top: 8em;">
+        <div class="card shadow-sm w-med p-5 background-modal" style="border-radius: 5%;">
+            <div class="text-center mb-4">
+                <img src="../assets/logo.png" draggable="false" alt="logo" class="img-fluid" style="max-width: 150px;">
+            </div>
+            <h1 class="text-center mb-4 h3">Esqueci minha de senha</h1>
+            <div class="form-group">
+                <label for="email">Digite seu email</label>
+                <input id="email" required type="text" name="email" class="form-control" autocomplete="off">
+            </div>
+            <div class="text-center">
+                <a href="login.html" class="d-block mb-2 link-color">Voltar para página de login</a>
+            </div>
+            <div class="text-center">
+                <button id="loginBtn" type="submit" class="background-button global-button">Enviar código</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
